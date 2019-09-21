@@ -1,22 +1,17 @@
-# kik Social
+# Kahlu
 
-kik Social is an open source and fully decentralized social network powered by the kik Platform. It is the new social network of kik.com. This change was made to further kik's committment to it's users trust and privacy online. And, by offering decentralization and federation, kik further demonstrates a lack of interest in the ownership of your data.
+Kahlu is an open source and fully decentralized social network powered by the gab/mastodon platform. It is the new social network of Kahlu.co.
 
-The kik Social project is based on the [Mastodon](https://github.com/tootsuite/mastodon) project, and is licensed under the terms and conditions of AGPL-3.0. While we will be keeping this license, over time we will be keeping less and less of the original project's source code and approach.
+The Kahlu project is based on the Gab/[Mastodon](https://github.com/tootsuite/mastodon) project, and is licensed under the terms and conditions of AGPL-3.0. While we will be keeping this license, over time we will be keeping less and less of the original project's source code and approach.
 
-Our goal is to establish the foundation of a federated network of social networks. Our first step is our move to this technology, which immediately enables the construction of that network and provides the tools people will need to create and build. Over time, a new implementation of this system will emerge that is entirely based on Node.js, moves away from Postgres as it's database, and becomes part of the HYDRA family.
+While Gab had an idea that made improvements on Mastodon, they fail to implement the simplest of items that show they are not really interested in a fully replicatable system. 
 
 ## Project goals
 
-We have diverged from Mastodon in several ways in pursuit of our own goals.
+1. To implement encrypted chat messages
+2. Better system of groups
+3. Better system of search and usability. 
 
-1. Node.js has been updated to 10.15.3LTS for hosting the Streaming API in compliance with the kik Platform.
-1. Statuses were renamed from 'toots' to 'kiks'
-1. The maximum length of a status was increased to 3,000 characters
-1. The browser client user experience has been significantly altered to match what users of kik will expect
-1. Features were added to integrate the system with the kik platform (accessing trends from Dissenter, for example)
-1. Groups and group moderation
-1. Quote posting
 
 ## BTCPay
 In order to make BTC flow work, 3 environment variables need to be set:
@@ -42,7 +37,6 @@ In order to make BTC flow work, 3 environment variables need to be set:
 
 The repository includes deployment configurations for **Docker and docker-compose**, but also a few specific platforms like **Heroku**, **Scalingo**, and **Nanobox**.
 
-A **stand-alone** installation guide will be provided as soon as possible.
 
 ## Local development
 
@@ -50,13 +44,13 @@ To get started developing on kik, you will need to run a version of it locally.
 The following instructions assume you are already familiar with using a terminal program.
 
 1. Install [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) if you haven't already.
-2. Clone this repository with `git clone https://github.com/datgb/kik-social.git`
-3. Change into the project directory with `cd kik-social`
+2. Clone this repository with `git clone https://github.com/datgb/kahlu.git`
+3. Change into the project directory with `cd kahlu`
 4. Run `vagrant up` to provision the virtual machine. This will take a while.
 5. Finally, run `vagrant ssh -c "cd /vagrant && foreman start"` to start the local web server.
 6. Visit http://0.0.0.0:3000 in your web browser to see kik's splash screen. If it doesn't load, or styling is missing, wait another minute and refresh the page.
 7. Log in with the username `admin` and password `administrator`
-8. Have fun developing on kik!
+8. Have fun developing on kahlu!
 
 ## License
 
