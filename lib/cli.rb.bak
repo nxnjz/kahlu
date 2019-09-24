@@ -1,56 +1,56 @@
 # frozen_string_literal: true
 
 require 'thor'
-require_relative 'kahlu/media_cli'
-require_relative 'kahlu/emoji_cli'
-require_relative 'kahlu/accounts_cli'
-require_relative 'kahlu/feeds_cli'
-require_relative 'kahlu/search_cli'
-require_relative 'kahlu/settings_cli'
-require_relative 'kahlu/statuses_cli'
-require_relative 'kahlu/domains_cli'
-require_relative 'kahlu/cache_cli'
-require_relative 'kahlu/version'
+require_relative 'kiksocial/media_cli'
+require_relative 'kiksocial/emoji_cli'
+require_relative 'kiksocial/accounts_cli'
+require_relative 'kiksocial/feeds_cli'
+require_relative 'kiksocial/search_cli'
+require_relative 'kiksocial/settings_cli'
+require_relative 'kiksocial/statuses_cli'
+require_relative 'kiksocial/domains_cli'
+require_relative 'kiksocial/cache_cli'
+require_relative 'kiksocial/version'
 
-module Kahlu
+module KikSocial
   class CLI < Thor
     def self.exit_on_failure?
       true
     end
 
     desc 'media SUBCOMMAND ...ARGS', 'Manage media files'
-    subcommand 'media', Kahlu::MediaCLI
+    subcommand 'media', KikSocial::MediaCLI
 
     desc 'emoji SUBCOMMAND ...ARGS', 'Manage custom emoji'
-    subcommand 'emoji', Kahlu::EmojiCLI
+    subcommand 'emoji', KikSocial::EmojiCLI
 
     desc 'accounts SUBCOMMAND ...ARGS', 'Manage accounts'
-    subcommand 'accounts', Kahlu::AccountsCLI
+    subcommand 'accounts', KikSocial::AccountsCLI
 
     desc 'feeds SUBCOMMAND ...ARGS', 'Manage feeds'
-    subcommand 'feeds', Kahlu::FeedsCLI
+    subcommand 'feeds', KikSocial::FeedsCLI
 
     desc 'search SUBCOMMAND ...ARGS', 'Manage the search engine'
-    subcommand 'search', Kahlu::SearchCLI
+    subcommand 'search', KikSocial::SearchCLI
 
     desc 'settings SUBCOMMAND ...ARGS', 'Manage dynamic settings'
-    subcommand 'settings', Kahlu::SettingsCLI
+    subcommand 'settings', KikSocial::SettingsCLI
 
     desc 'statuses SUBCOMMAND ...ARGS', 'Manage statuses'
-    subcommand 'statuses', Kahlu::StatusesCLI
+    subcommand 'statuses', KikSocial::StatusesCLI
 
     desc 'domains SUBCOMMAND ...ARGS', 'Manage account domains'
-    subcommand 'domains', Kahlu::DomainsCLI
+    subcommand 'domains', KikSocial::DomainsCLI
 
     desc 'cache SUBCOMMAND ...ARGS', 'Manage cache'
-    subcommand 'cache', Kahlu::CacheCLI
+    subcommand 'cache', KikSocial::CacheCLI
 
     option :dry_run, type: :boolean
     desc 'self-destruct', 'Erase the server from the federation'
     long_desc <<~LONG_DESC
       Erase the server from the federation by broadcasting account delete
       activities to all known other servers. This allows a "clean exit" from
-      running a Kahlu server, as it leaves next to no cache behind on
+      running a kik Social server, as it leaves next to no cache behind on
       other servers.
 
       This command is always interactive and requires confirmation twice.
@@ -122,7 +122,7 @@ module Kahlu
 
     desc 'version', 'Show version'
     def version
-      say(Kahlu::Version.to_s)
+      say(KikSocial::Version.to_s)
     end
   end
 end

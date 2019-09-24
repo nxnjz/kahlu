@@ -22,7 +22,7 @@
       iframes[data.id].height = data.height;
     });
 
-    [].forEach.call(document.querySelectorAll('iframe.kahlu-embed'), function(iframe) {
+    [].forEach.call(document.querySelectorAll('iframe.kiksocial-embed'), function(iframe) {
       iframe.scrolling      = 'no';
       iframe.style.overflow = 'hidden';
 

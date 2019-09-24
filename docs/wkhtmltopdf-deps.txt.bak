@@ -1,6 +1,6 @@
 # WK<HTML>TOPDF
 
-[wkhtmltopdf](https://wkhtmltopdf.org/) is an open source (LGPLv3) command line tool to render HTML to PDF and various image formats using the Qt WebKit rendering engine. It is a required dependency that enables kik Social to create PDF documents as downloadable invoices for purchases made during the Kahlu PRO upgrade and subscription process.
+[wkhtmltopdf](https://wkhtmltopdf.org/) is an open source (LGPLv3) command line tool to render HTML to PDF and various image formats using the Qt WebKit rendering engine. It is a required dependency that enables kik Social to create PDF documents as downloadable invoices for purchases made during the kik PRO upgrade and subscription process.
 
 This is not a light dependency and is potentially pulling a lot of code into your production environment.
 
