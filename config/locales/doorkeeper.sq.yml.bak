@@ -29,7 +29,7 @@ sq:
       edit:
         title: Përpunoni aplikacion
       form:
-        error: Oh! Kontrolloni formularin tuaj për gabime të mundshme
+        error: Oh! Kontrolloni formularin tuaj për kikime të mundshme
       help:
         native_redirect_uri: Përdor %{native_redirect_uri} për teste vendore
         redirect_uri: Përdorni një URI për rresht
@@ -57,7 +57,7 @@ sq:
         authorize: Autorizoje
         deny: Mohoje
       error:
-        title: Ndodhi një gabim
+        title: Ndodhi një kikim
       new:
         able_to: Do të jetë në gjendje të
         prompt: "%{client_name} kërkesa hyrjeje aplikacionesh te llogaria juaj"

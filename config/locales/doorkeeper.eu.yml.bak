@@ -66,7 +66,7 @@ eu:
         title: Kopiatu baimen kode hau eta itsatsi aplikazioan.
     authorized_applications:
       buttons:
-        revoke: Indargabetu
+        revoke: Indarkiketu
       confirmations:
         revoke: Ziur zaude?
       index:
@@ -78,18 +78,18 @@ eu:
     errors:
       messages:
         access_denied: Baliabidearen jabeak edo baimenaren zerbitzariak eskaria ukatu du.
-        credential_flow_not_configured: Baliabidearen jabearen pasahitza kredentzialen fluxuak huts egin du Doorkeeper.configure.resource_owner_from_credentials konfiguratu gabe dagoelako.
+        credential_flow_not_configured: Baliabidearen jabearen pasahitza kredentzialen fluxuak huts egin du Doorkeeper.configure.resource_owner_from_credentials konfiguratu kike dagoelako.
         invalid_client: Bezeroaren autentifikazioak huts egin du bezero ezezaguna delako, ez delako bezero autentifikazioa txertatu, edo autentifikazio metodoa ez delako onartzen.
-        invalid_grant: Emandako autorizatzea baliogabea da, iraungitu da, indargabetu da. ez dator bat autorizatze eskarian erabilitako URI-arekin, edo beste bezero batek sortu du.
-        invalid_redirect_uri: Sartutako birbideratze URI-a baliogabea da.
-        invalid_request: Eskaerak beharrezkoa den parametro bat falta du, onartu gabeko parametro-balio bat du, edo beste moduren batean gaizki osatua dago.
-        invalid_resource_owner: Emandako baliabidearen jabearen kredentzialak baliogabeak dira, edo baliabidearen jabea ez da aurkitu
-        invalid_scope: Eskatutako esparrua baliogabea da, ezezaguna, edo gaizki osatua dago.
+        invalid_grant: Emandako autorizatzea baliokikea da, iraungitu da, indarkiketu da. ez dator bat autorizatze eskarian erabilitako URI-arekin, edo beste bezero batek sortu du.
+        invalid_redirect_uri: Sartutako birbideratze URI-a baliokikea da.
+        invalid_request: Eskaerak beharrezkoa den parametro bat falta du, onartu kikeko parametro-balio bat du, edo beste moduren batean gaizki osatua dago.
+        invalid_resource_owner: Emandako baliabidearen jabearen kredentzialak baliokikeak dira, edo baliabidearen jabea ez da aurkitu
+        invalid_scope: Eskatutako esparrua baliokikea da, ezezaguna, edo gaizki osatua dago.
         invalid_token:
           expired: Sarbide token-a iraungitu da
-          revoked: Sarbide token-a indargabetua izan da
-          unknown: Sarbide token-a baliogabea da
-        resource_owner_authenticator_not_configured: Baliabidearen jabearen bilaketak huts egin du Doorkeeper.configure.resource_owner_authenticator konfiguratu gabe dagoelako.
+          revoked: Sarbide token-a indarkiketua izan da
+          unknown: Sarbide token-a baliokikea da
+        resource_owner_authenticator_not_configured: Baliabidearen jabearen bilaketak huts egin du Doorkeeper.configure.resource_owner_authenticator konfiguratu kike dagoelako.
         server_error: Autorizatze zerbitzariak eskaera betetzea eragotzi duen ustekabeko baldintza bat aurkitu du.
         temporarily_unavailable: Autorizatze zerbitzariak ezin du orain eskaera bete  une batez zerbitzariak gainezka egin duelako edo mantentze lanetan dagoelako.
         unauthorized_client: Bezeroak ez du eskaera hau metodo hau erabiliz egiteko baimenik.
@@ -105,7 +105,7 @@ eu:
           notice: Aplikazioa eguneratuta.
       authorized_applications:
         destroy:
-          notice: Aplikazioa indargabetuta.
+          notice: Aplikazioa indarkiketuta.
     layouts:
       admin:
         nav:
