@@ -16,7 +16,7 @@ aliases:
           PAM_ENABLED: true
           PAM_DEFAULT_SERVICE: pam_test
           PAM_CONTROLLED_SERVICE: pam_test_controlled
-    working_directory: ~/projects/kahlu/
+    working_directory: ~/projects/kik-social/
 
   - &attach_workspace
     attach_workspace:
@@ -26,7 +26,7 @@ aliases:
     persist_to_workspace:
       root: ~/projects/
       paths:
-        - ./kahlu/
+        - ./kik-social/
 
   - &restore_ruby_dependencies
     restore_cache:
@@ -76,8 +76,8 @@ aliases:
         - persist_to_workspace:
             root: ~/projects/
             paths:
-                - ./kahlu/.bundle/
-                - ./kahlu/vendor/bundle/
+                - ./kik-social/.bundle/
+                - ./kik-social/vendor/bundle/
 
   - &test_steps
       steps:
@@ -125,8 +125,8 @@ jobs:
       - persist_to_workspace:
           root: ~/projects/
           paths:
-              - ./kahlu/public/assets
-              - ./kahlu/public/packs-test/
+              - ./kik-social/public/assets
+              - ./kik-social/public/packs-test/
 
   test-ruby2.6:
     <<: *defaults

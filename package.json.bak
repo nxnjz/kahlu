@@ -1,5 +1,5 @@
 {
-  "name": "kahlu",
+  "name": "kik-social",
   "license": "AGPL-3.0-or-later",
   "engines": {
     "node": ">=10 <11"
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/datgb/kahlu"
+    "url": "https://github.com/nxnjz/kik-social"
   },
   "browserslist": [
     "last 2 versions",
@@ -26,7 +26,7 @@
   ],
   "jest": {
     "projects": [
-      "<rootDir>/app/javascript/kahlu"
+      "<rootDir>/app/javascript/kiksocial"
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/",
@@ -40,14 +40,14 @@
       "raf/polyfill"
     ],
     "setupFilesAfterEnv": [
-      "<rootDir>/app/javascript/kahlu/test_setup.js"
+      "<rootDir>/app/javascript/kiksocial/test_setup.js"
     ],
     "collectCoverageFrom": [
-      "app/javascript/kahlu/**/*.js",
-      "!app/javascript/kahlu/features/emoji/emoji_compressed.js",
-      "!app/javascript/kahlu/locales/locale-data/*.js",
-      "!app/javascript/kahlu/service_worker/entry.js",
-      "!app/javascript/kahlu/test_setup.js"
+      "app/javascript/kiksocial/**/*.js",
+      "!app/javascript/kiksocial/features/emoji/emoji_compressed.js",
+      "!app/javascript/kiksocial/locales/locale-data/*.js",
+      "!app/javascript/kiksocial/service_worker/entry.js",
+      "!app/javascript/kiksocial/test_setup.js"
     ],
     "coverageDirectory": "<rootDir>/coverage",
     "moduleDirectories": [
@@ -122,7 +122,6 @@
     "punycode": "^2.1.0",
     "rails-ujs": "^5.2.3",
     "react": "^16.7.0",
-    "react-datepicker": "^2.9.6",
     "react-dom": "^16.7.0",
     "react-hotkeys": "^1.1.4",
     "react-immutable-proptypes": "^2.1.0",

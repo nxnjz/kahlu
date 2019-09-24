@@ -1,21 +1,16 @@
 {
-  "name": "Kahlu",
-  "description": "A social network for everyone. Learn, share, meet new people. Its a lifestyle. Live it.",
-  "repository": "https://github.com/datgb/kahlu",
-  "logo": "https://github.com/datgb/kahlu/blob/master/public/android-chrome-192x192.png",
+  "name": "kik Social",
+  "description": "A GNU Social-compatible microblogging server",
+  "repository": "https://github.com/datgb/kik-social",
+  "logo": "https://github.com/datgb/kik-social/blob/master/public/android-chrome-192x192.png",
   "env": {
-    "HEROKU": {
-      "description": "Leave this as true",
-      "value": "true",
-      "required": true
-    },
     "LOCAL_DOMAIN": {
-      "description": "The domain that your Kahlu instance will run on (this can be appname.herokuapp.com or a custom domain)",
+      "description": "The domain that your kik Social instance will run on (this can be appname.scalingo.io or a custom domain)",
       "required": true
     },
     "LOCAL_HTTPS": {
-      "description": "Will your domain support HTTPS? (Automatic for herokuapp, requires manual configuration for custom domains)",
-      "value": "false",
+      "description": "Will your domain support HTTPS? (Automatic for *.scalingo.io, requires manual configuration for custom domains)",
+      "value": "true",
       "required": true
     },
     "PAPERCLIP_SECRET": {
@@ -36,7 +31,7 @@
       "required": true
     },
     "S3_ENABLED": {
-      "description": "Should Kahlu use Amazon S3 for storage? This is highly recommended, as Heroku does not have persistent file storage (files will be lost).",
+      "description": "Should kik Social use Amazon S3 for storage? This is highly recommended, as Scalingo does not have persistent file storage (files will be lost).",
       "value": "true",
       "required": false
     },
@@ -91,24 +86,23 @@
     "SMTP_ENABLE_STARTTLS_AUTO": {
       "description": "Enable STARTTLS if SMTP server supports it? Default is true.",
       "required": false
+    },
+    "BUILDPACK_URL": {
+      "description": "Internal scalingo configuration",
+      "required": true,
+      "value": "https://github.com/Scalingo/multi-buildpack.git"
+    },
+    "WITH_FFPROBE": {
+      "description": "Internal scalingo configuration to install ffprobe",
+      "required": true,
+      "value": "true"
     }
   },
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-apt"
-    },
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "heroku/ruby"
-    }
-  ],
   "scripts": {
     "postdeploy": "bundle exec rails db:migrate && bundle exec rails db:seed"
   },
   "addons": [
-    "heroku-postgresql",
-    "heroku-redis"
+    "postgresql",
+    "redis"
   ]
 }

@@ -79,7 +79,7 @@ Rails/HttpStatus:
 
 Rails/Exit:
   Exclude:
-    - 'lib/kahlu/*'
+    - 'lib/kiksocial/*'
     - 'lib/cli.rb'
 
 Style/ClassAndModuleChildren:

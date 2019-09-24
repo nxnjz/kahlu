@@ -40,7 +40,7 @@ The repository includes deployment configurations for **Docker and docker-compos
 
 ## Local development
 
-To get started developing on Kahlu, you will need to run a version of it locally.
+To get started developing on kik, you will need to run a version of it locally.
 The following instructions assume you are already familiar with using a terminal program.
 
 1. Install [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) if you haven't already.

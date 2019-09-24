@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Update code and update public/src/kahlu.zip
+# Update code and update public/src/kik-social.zip
 git pull origin develop
 ./gs-export
 

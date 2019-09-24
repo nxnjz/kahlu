@@ -191,7 +191,7 @@ module.exports = {
       {
         devDependencies: [
           'config/webpack/**',
-          'app/javascript/kahlu/test_setup.js',
+          'app/javascript/kiksocial/test_setup.js',
           'app/javascript/**/__tests__/**',
         ],
       },

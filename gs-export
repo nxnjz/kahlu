@@ -1,2 +1,2 @@
 #!/bin/bash
-git archive --format zip --output ~/kik-social.zip develop
+git archive --format zip --output ~/kahlu.zip develop

@@ -20,7 +20,7 @@ echo iptables-persistent iptables-persistent/autosave_v4 boolean true | sudo deb
 echo iptables-persistent iptables-persistent/autosave_v6 boolean true | sudo debconf-set-selections
 sudo apt-get install iptables-persistent -y
 
-# Add packages to build and run Kahlu
+# Add packages to build and run kik Social
 sudo apt-get install \
   git-core \
   g++ \
@@ -64,14 +64,14 @@ rvm reinstall ruby-$RUBY_VERSION --disable-binary
 
 # Configure database
 sudo -u postgres createuser -U postgres vagrant -s
-sudo -u postgres createdb -U postgres kahlu_development
+sudo -u postgres createdb -U postgres kiksocial_development
 
 # Install gems and node modules
 gem install bundler foreman
 bundle install
 yarn install
 
-# Build Kahlu
+# Build kik Social
 export $(cat ".env.vagrant" | xargs)
 bundle exec rails db:setup
 
@@ -94,7 +94,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/xenial64"
 
   config.vm.provider :virtualbox do |vb|
-    vb.name = "kahlu"
+    vb.name = "kiksocial"
     vb.customize ["modifyvm", :id, "--memory", "2048"]
     # Increase the number of CPUs. Uncomment and adjust to
     # increase performance
@@ -112,13 +112,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   # This uses the vagrant-hostsupdater plugin, and lets you
-  # access the development site at http://kahlu.local.
+  # access the development site at http://kiksocial.local.
   # If you change it, also change it in .env.vagrant before provisioning
   # the vagrant server to update the development build.
   #
   # To install:
   #   $ vagrant plugin install vagrant-hostsupdater
-  config.vm.hostname = "kahlu.local"
+  config.vm.hostname = "kiksocial.local"
 
   if defined?(VagrantPlugins::HostsUpdater)
     config.vm.network :private_network, ip: "192.168.42.42", nictype: "virtio"

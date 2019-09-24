@@ -138,26 +138,26 @@ worker.cron_only:
     # who opted to receive one
     - id: send_digest_emails
       schedule: '00 20 * * *'
-      command: 'bundle exec rake kahlu:emails:digest'
+      command: 'bundle exec rake kiksocial:emails:digest'
 
     # 00:10 (ten past midnight), server time: remove local copies of remote
     # users' media once they are older than a certain age (use NUM_DAYS evar to
     # change this from the default of 7 days)
     - id: clear_remote_media
       schedule: '10 00 * * *'
-      command: 'bundle exec rake kahlu:media:remove_remote'
+      command: 'bundle exec rake kiksocial:media:remove_remote'
 
     # 00:20 (twenty past midnight), server time: remove subscriptions to remote
     # users that nobody follows locally (anymore)
     - id: clear_unfollowed_subs
       schedule: '20 00 * * *'
-      command: 'bundle exec rake kahlu:push:clear'
+      command: 'bundle exec rake kiksocial:push:clear'
 
     # 00:30 (half past midnight), server time: update local copies of remote
     # users' avatars to match whatever they currently have set on their profile
     - id: update_remote_avatars
       schedule: '30 00 * * *'
-      command: 'bundle exec rake kahlu:media:redownload_avatars'
+      command: 'bundle exec rake kiksocial:media:redownload_avatars'
 
     ############################################################################
     # This task is one you might want to enable, or might not. It keeps disk
@@ -171,7 +171,7 @@ worker.cron_only:
     # # 00:00 (midnight), server time: remove media posted by silenced users
     # - id: clear_silenced_media
     #   schedule: '00 00 * * *'
-    #   command: 'bundle exec rake kahlu:media:remove_silenced'
+    #   command: 'bundle exec rake kiksocial:media:remove_silenced'
 
     ############################################################################
     # The following two tasks can be uncommented to automatically open and close
@@ -183,12 +183,12 @@ worker.cron_only:
     # # 08:00 (8 am), server time: open registrations so new users can join
     # - id: open_registrations
     #   schedule: '00 08 * * *'
-    #   command: 'bundle exec rake kahlu:settings:open_registrations'
+    #   command: 'bundle exec rake kiksocial:settings:open_registrations'
     #
     # # 16:00 (4 pm), server time: close registrations so new users *can't* join
     # - id: close_registrations
     #   schedule: '00 16 * * *'
-    #   command: 'bundle exec rake kahlu:settings:close_registrations'
+    #   command: 'bundle exec rake kiksocial:settings:close_registrations'
 
 
 data.db:

@@ -59,10 +59,10 @@ RUN npm install -g yarn && \
 	apt -y install git libicu-dev libidn11-dev \
 	libpq-dev libprotobuf-dev protobuf-compiler
 
-COPY Gemfile* package.json yarn.lock /opt/kahlu/
+COPY Gemfile* package.json yarn.lock /opt/kiksocial/
 
 # Install application dependencies
-RUN cd /opt/kahlu && \
+RUN cd /opt/kiksocial && \
 	bundle install -j$(nproc) --deployment --without development test && \
 	yarn install --pure-lockfile
 
@@ -74,9 +74,9 @@ COPY --from=build-dep /opt/ruby /opt/ruby
 COPY --from=build-dep /opt/jemalloc /opt/jemalloc
 
 # Add more PATHs to the PATH
-ENV PATH="${PATH}:/opt/ruby/bin:/opt/node/bin:/opt/kahlu/bin"
+ENV PATH="${PATH}:/opt/ruby/bin:/opt/node/bin:/opt/kiksocial/bin"
 
-# Create the kahlu user
+# Create the kiksocial user
 ARG UID=991
 ARG GID=991
 RUN apt update && \
@@ -84,17 +84,17 @@ RUN apt update && \
 	ln -s /opt/jemalloc/lib/* /usr/lib/ && \
 	apt -y dist-upgrade && \
 	apt install -y vim whois wget && \
-	addgroup --gid $GID kahlu && \
-	useradd -m -u $UID -g $GID -d /opt/kahlu kahlu && \
-	echo "kahlu:`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 24 | mkpasswd -s -m sha-256`" | chpasswd
+	addgroup --gid $GID kiksocial && \
+	useradd -m -u $UID -g $GID -d /opt/kiksocial kiksocial && \
+	echo "kiksocial:`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 24 | mkpasswd -s -m sha-256`" | chpasswd
 
-# Install kahlu runtime deps
+# Install kiksocial runtime deps
 RUN apt -y --no-install-recommends install \
 	  libssl1.1 libpq5 imagemagick ffmpeg \
 	  libicu60 libprotobuf10 libidn11 libyaml-0-2 \
 	  file ca-certificates tzdata libreadline7 && \
 	apt -y install gcc && \
-	ln -s /opt/kahlu /kahlu && \
+	ln -s /opt/kiksocial /kiksocial && \
 	gem install bundler && \
 	rm -rf /var/cache && \
 	rm -rf /var/lib/apt/lists/*
@@ -107,8 +107,8 @@ RUN echo "$TINI_SUM tini" | sha256sum -c -
 RUN chmod +x /tini
 
 # Copy over masto source, and dependencies from building, and set permissions
-COPY --chown=kahlu:kahlu . /opt/kahlu
-COPY --from=build-dep --chown=kahlu:kahlu /opt/kahlu /opt/kahlu
+COPY --chown=kiksocial:kiksocial . /opt/kiksocial
+COPY --from=build-dep --chown=kiksocial:kiksocial /opt/kiksocial /opt/kiksocial
 
 # Run masto services in prod mode
 ENV RAILS_ENV="production"
@@ -118,7 +118,7 @@ ENV NODE_ENV="production"
 ENV RAILS_SERVE_STATIC_FILES="true"
 
 # Set the run user
-USER kahlu
+USER kiksocial
 
 # Precompile assets
 RUN cd ~ && \
@@ -126,5 +126,5 @@ RUN cd ~ && \
 	yarn cache clean
 
 # Set the work dir and the container entry point
-WORKDIR /opt/kahlu
+WORKDIR /opt/kiksocial
 ENTRYPOINT ["/tini", "--"]

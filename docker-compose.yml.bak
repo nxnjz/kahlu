@@ -35,10 +35,10 @@ services:
 
   web:
     build: .
-    image: kahlu/social
+    image: kik/social
     restart: always
     env_file: .env.production
-    command: bash -c "rm -f /kahlu/tmp/pids/server.pid; bundle exec rails s -p 3000 -b '0.0.0.0'"
+    command: bash -c "rm -f /kiksocial/tmp/pids/server.pid; bundle exec rails s -p 3000 -b '0.0.0.0'"
     networks:
       - external_network
       - internal_network
@@ -51,11 +51,11 @@ services:
       - redis
       # - es
     volumes:
-      - /mnt/md0/assets:/kahlu/public/system
+      - /mnt/md0/assets:/kiksocial/public/system
 
   streaming:
     build: .
-    image: kahlu/social
+    image: kik/social
     restart: always
     env_file: .env.production
     command: yarn start
@@ -72,7 +72,7 @@ services:
 
   sidekiq:
     build: .
-    image: kahlu/social
+    image: kik/social
     restart: always
     env_file: .env.production
     command: bundle exec sidekiq
