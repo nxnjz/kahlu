@@ -90,7 +90,7 @@ Rails.application.routes.draw do
     end
 
     resources :promotions, only: [:index, :new, :create, :edit, :update, :destroy]
-    
+
     namespace :verifications do
       get :moderation, to: 'moderation#index', as: :moderation
       get 'moderation/:id/approve', to: 'moderation#approve', as: :approve
@@ -127,6 +127,7 @@ Rails.application.routes.draw do
 
     resources :sessions, only: [:destroy]
     resources :featured_tags, only: [:index, :create, :destroy]
+    resources :scheduled_statuses, only: [:index, :destroy]
   end
 
   resources :media, only: [:show] do
@@ -305,6 +306,7 @@ Rails.application.routes.draw do
         member do
           get :context
           get :card
+          get :revisions
         end
       end
 

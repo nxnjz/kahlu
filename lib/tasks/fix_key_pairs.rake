@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-task fix_key_pairs: 'kiksocial:fix_key_pairs'
+task fix_key_pairs: 'kahlu:fix_key_pairs'
 
-namespace :kiksocial do
+namespace :kahlu do
   desc 'Generates key pairs for migrated accounts'
   task :fix_key_pairs => :environment do
     Account.select(:id, :username, :private_key, :public_key).all.each do |a|

@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-task fix_group_member_counts: 'kiksocial:fix-group-member-counts'
+task fix_group_member_counts: 'kahlu:fix-group-member-counts'
 
-namespace :kiksocial do
+namespace :kahlu do
   desc 'Re-compute group member counts'
   task :fix_group_member_counts => :environment do
     Group.select(:id).all.each do |group|

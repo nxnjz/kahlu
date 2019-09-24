@@ -2,7 +2,7 @@
 # important settings can be changed from the admin interface.
 
 defaults: &defaults
-  site_title: kik Social
+  site_title: Kahlu
   site_short_description: ''
   site_description: ''
   site_extended_description: ''
@@ -41,7 +41,7 @@ defaults: &defaults
     digest: true
     report: true
     pending_account: true
-    emails_from_kikcom: true
+    emails_from_kahlucom: true
   interactions:
     must_be_follower: false
     must_be_following: false

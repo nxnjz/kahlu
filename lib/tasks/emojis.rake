@@ -17,7 +17,7 @@ namespace :emojis do
   task :generate do
     source = 'http://www.unicode.org/Public/emoji/11.0/emoji-test.txt'
     codes  = []
-    dest   = Rails.root.join('app', 'javascript', 'kiksocial', 'features', 'emoji', 'emoji_map.json')
+    dest   = Rails.root.join('app', 'javascript', 'kahlu', 'features', 'emoji', 'emoji_map.json')
 
     puts "Downloading emojos from source... (#{source})"
 

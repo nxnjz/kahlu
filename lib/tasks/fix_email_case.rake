@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-task fix_email_case: 'kiksocial:fix_email_case'
+task fix_email_case: 'kahlu:fix_email_case'
 
-namespace :kiksocial do
+namespace :kahlu do
   desc 'Convert emails to lowercase'
   task :fix_email_case => :environment do
     User.select(:id, :email).all.each do |user|

@@ -2,10 +2,10 @@
 
 lock '3.11.0'
 
-set :repo_url, ENV.fetch('REPO', 'https://github.com/datgb/kik-social')
+set :repo_url, ENV.fetch('REPO', 'https://github.com/datgb/kahlu')
 set :branch, ENV.fetch('BRANCH', 'master')
 
-set :application, 'kiksocial'
+set :application, 'kahlu'
 set :rbenv_type, :user
 set :rbenv_ruby, File.read('.ruby-version').strip
 set :migration_role, :app

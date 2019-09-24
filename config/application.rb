@@ -10,17 +10,17 @@ require_relative '../app/lib/exceptions'
 require_relative '../lib/paperclip/lazy_thumbnail'
 require_relative '../lib/paperclip/gif_transcoder'
 require_relative '../lib/paperclip/video_transcoder'
-require_relative '../lib/kiksocial/snowflake'
-require_relative '../lib/kiksocial/version'
+require_relative '../lib/kahlu/snowflake'
+require_relative '../lib/kahlu/version'
 require_relative '../lib/devise/ldap_authenticatable'
 
 Dotenv::Railtie.load
 
 Bundler.require(:pam_authentication) if ENV['PAM_ENABLED'] == 'true'
 
-require_relative '../lib/kiksocial/redis_config'
+require_relative '../lib/kahlu/redis_config'
 
-module KikSocial
+module Kahlu
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2

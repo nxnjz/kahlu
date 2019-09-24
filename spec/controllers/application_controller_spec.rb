@@ -116,12 +116,12 @@ describe ApplicationController, type: :controller do
 
     it 'returns user\'s theme when it is set' do
       current_user = Fabricate(:user)
-      current_user.settings['theme'] = 'kiksocial-light'
+      current_user.settings['theme'] = 'kahlu-light'
       sign_in current_user
 
       allow(Setting).to receive(:[]).with('theme').and_return 'contrast'
 
-      expect(controller.view_context.current_theme).to eq 'kiksocial-light'
+      expect(controller.view_context.current_theme).to eq 'kahlu-light'
     end
   end
 

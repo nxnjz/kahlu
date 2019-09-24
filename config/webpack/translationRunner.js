@@ -5,7 +5,7 @@ const { default: manageTranslations } = require('react-intl-translations-manager
 const RFC5646_REGEXP = /^[a-z]{2,3}(?:-(?:x|[A-Za-z]{2,4}))*$/;
 
 const rootDirectory = path.resolve(__dirname, '..', '..');
-const translationsDirectory = path.resolve(rootDirectory, 'app', 'javascript', 'kiksocial', 'locales');
+const translationsDirectory = path.resolve(rootDirectory, 'app', 'javascript', 'kahlu', 'locales');
 const messagesDirectory = path.resolve(rootDirectory, 'build', 'messages');
 const availableLanguages = fs.readdirSync(translationsDirectory).reduce((languages, filename) => {
   const basename = path.basename(filename, '.json');
@@ -50,7 +50,7 @@ Use yarn "manage:translations -- --help" for usage information
 
 const usage = `Usage: yarn manage:translations [OPTIONS] [LANGUAGES]
 
-Manage JavaScript translation files in kik Social. Generates and update translations in translationsDirectory: ${translationsDirectory}
+Manage JavaScript translation files in Kahlu. Generates and update translations in translationsDirectory: ${translationsDirectory}
 
 LANGUAGES
 The RFC5646 language tag for the language you want to test or fix. If you want to input multiple languages, separate them with space.

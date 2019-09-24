@@ -30,12 +30,12 @@ describe Api::BaseController do
   describe 'Error handling' do
     ERRORS_WITH_CODES = {
       ActiveRecord::RecordInvalid => 422,
-      KikSocial::ValidationError => 422,
+      Kahlu::ValidationError => 422,
       ActiveRecord::RecordNotFound => 404,
-      KikSocial::UnexpectedResponseError => 503,
+      Kahlu::UnexpectedResponseError => 503,
       HTTP::Error => 503,
       OpenSSL::SSL::SSLError => 503,
-      KikSocial::NotPermittedError => 403,
+      Kahlu::NotPermittedError => 403,
     }
 
     before do

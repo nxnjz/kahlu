@@ -96,8 +96,8 @@ module.exports = merge(sharedConfig, {
         '**/*.woff',
       ],
       // ServiceWorker: {
-      //   entry: `imports-loader?ATTACHMENT_HOST=>${encodeURIComponent(JSON.stringify(attachmentHost))}!${encodeURI(path.join(__dirname, '../../app/javascript/kiksocial/service_worker/entry.js'))}`,
-      //   cacheName: 'kiksocial',
+      //   entry: `imports-loader?ATTACHMENT_HOST=>${encodeURIComponent(JSON.stringify(attachmentHost))}!${encodeURI(path.join(__dirname, '../../app/javascript/kahlu/service_worker/entry.js'))}`,
+      //   cacheName: 'kahlu',
       //   output: '../assets/sw.js',
       //   publicPath: '/sw.js',
       //   minify: true,

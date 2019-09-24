@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-task stats: 'kiksocial:stats'
+task stats: 'kahlu:stats'
 
-namespace :kiksocial do
+namespace :kahlu do
   desc 'Report code statistics (KLOCs, etc)'
   task :stats do
     require 'rails/code_statistics'

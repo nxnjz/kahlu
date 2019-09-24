@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-task fix_account_stats: 'kiksocial:fix-account-stats'
+task fix_account_stats: 'kahlu:fix-account-stats'
 
-namespace :kiksocial do
+namespace :kahlu do
   desc 'Re-compute user statistics (following cnt, followers cnt, etc.)'
   task :fix_account_stats => :environment do
     Account.select(:id, :username).all.each do |a|

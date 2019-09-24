@@ -9,28 +9,28 @@ RSpec.describe IntentsController, type: :controller do
   describe 'GET #show' do
     subject { get :show, params: { uri: uri } }
 
-    context 'when schema is web+kiksocial' do
+    context 'when schema is web+kahlu' do
       context 'when host is follow' do
-        let(:uri) { 'web+kiksocial://follow?uri=test' }
+        let(:uri) { 'web+kahlu://follow?uri=test' }
 
         it { is_expected.to redirect_to authorize_interaction_path(uri: 'test') }
       end
 
       context 'when host is share' do
-        let(:uri) { 'web+kiksocial://share?text=test' }
+        let(:uri) { 'web+kahlu://share?text=test' }
 
         it { is_expected.to redirect_to share_path(text: 'test') }
       end
 
       context 'when host is none of the above' do
-        let(:uri) { 'web+kiksocial://test' }
+        let(:uri) { 'web+kahlu://test' }
 
         it { is_expected.to have_http_status 404 }
       end
     end
 
-    context 'when schema is not web+kiksocial' do
-      let(:uri) { 'api+kiksocial://test.com' }
+    context 'when schema is not web+kahlu' do
+      let(:uri) { 'api+kahlu://test.com' }
 
       it { is_expected.to have_http_status 404 }
     end

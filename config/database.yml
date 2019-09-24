@@ -7,7 +7,7 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV['DB_NAME'] || 'kiksocial_development' %>
+  database: <%= ENV['DB_NAME'] || 'kahlu_development' %>
   username: <%= ENV['DB_USER'] %>
   password: <%= ENV['DB_PASS'] %>
   host: <%= ENV['DB_HOST'] %>
@@ -18,7 +18,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV['DB_NAME'] || 'kiksocial' %>_test<%= ENV['TEST_ENV_NUMBER'] %>
+  database: <%= ENV['DB_NAME'] || 'kahlu' %>_test<%= ENV['TEST_ENV_NUMBER'] %>
   username: <%= ENV['DB_USER'] %>
   password: <%= ENV['DB_PASS'] %>
   host: <%= ENV['DB_HOST'] %>
@@ -26,8 +26,8 @@ test:
 
 production:
   <<: *default
-  database: <%= ENV['DB_NAME'] || 'kiksocial_production' %>
-  username: <%= ENV['DB_USER'] || 'kiksocial' %>
+  database: <%= ENV['DB_NAME'] || 'kahlu_production' %>
+  username: <%= ENV['DB_USER'] || 'kahlu' %>
   password: <%= ENV['DB_PASS'] || '' %>
   host: <%= ENV['DB_HOST'] || 'localhost' %>
   port: <%= ENV['DB_PORT'] || 5432 %>

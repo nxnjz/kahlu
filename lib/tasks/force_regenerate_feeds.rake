@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-task force_regenerate_feeds: 'kiksocial:force-regenerate-feeds'
+task force_regenerate_feeds: 'kahlu:force-regenerate-feeds'
 
-namespace :kiksocial do
+namespace :kahlu do
   desc 'Re-generate home feeds for all users (run after any migrations)'
   task :force_regenerate_feeds => :environment do
     Account.select(:id, :username).all.each do |a|

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../kiksocial/snowflake'
+require_relative '../kahlu/snowflake'
 
 def each_schema_load_environment
   # If we're in development, also run this for the test environment.
@@ -63,13 +63,13 @@ namespace :db do
 
   task :define_timestamp_id do
     each_schema_load_environment do
-      KikSocial::Snowflake.define_timestamp_id
+      Kahlu::Snowflake.define_timestamp_id
     end
   end
 
   task :ensure_id_sequences_exist do
     each_schema_load_environment do
-      KikSocial::Snowflake.ensure_id_sequences_exist
+      Kahlu::Snowflake.ensure_id_sequences_exist
     end
   end
 end

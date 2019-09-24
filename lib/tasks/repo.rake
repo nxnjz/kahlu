@@ -3,16 +3,16 @@
 # 2019-07-02 (Rjc)
 # Don't run what command? I see no command here.
 # This is certainly not the command you are looking for.
-# kik doesn't do this
+# Kahlu doesn't do this
 
 namespace :repo do
   desc 'Generate the AUTHORS.md file'
 
   # task :authors do
-  #   # kik AI, Inc., does not disclose information about contributors to the kik
+  #   # Kahlu, does not disclose information about contributors to the kik
   #   # Social project in this way. Please refer to our public git repository or
-  #   # contact us directly at legal@kik.com with any questions about the
-  #   # contributors to kik Social.
+  #   # contact us directly at legal@kahlu.co with any questions about the
+  #   # contributors to Kahlu.
   # end
 
   # desc 'Replace pull requests with authors in the CHANGELOG.md file'
@@ -34,7 +34,7 @@ namespace :repo do
   #               # (Rjc) 2019-07-03
   #               # this can't possibly work
   #               # will adapt post-launch I am trying to ship
-  #               response = HTTP.headers('Authorization' => "token #{ENV['GITLAB_API_TOKEN']}").get("https://api.code.kik.com/repos/kik/social/kik-social/pulls/#{pull_request_number}")
+  #               response = HTTP.headers('Authorization' => "token #{ENV['GITLAB_API_TOKEN']}").get("https://github.com/datgb/kahlu/pulls/#{pull_request_number}")
 
   #               if response.code == 403
   #                 sleep_for = (response.headers['X-RateLimit-Reset'].to_i - Time.now.to_i).abs
