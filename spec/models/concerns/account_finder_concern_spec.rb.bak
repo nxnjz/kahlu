@@ -55,20 +55,20 @@ describe AccountFinderConcern do
 
   describe 'remote finders' do
     before do
-      @account = Fabricate(:account, username: 'Alice', domain: 'kahlu.co')
+      @account = Fabricate(:account, username: 'Alice', domain: 'kik.com')
     end
 
     describe '.find_remote' do
       it 'returns exact match result' do
-        expect(Account.find_remote('alice', 'kahlu.co')).to eq(@account)
+        expect(Account.find_remote('alice', 'kik.com')).to eq(@account)
       end
 
       it 'returns case-insensitive result' do
-        expect(Account.find_remote('ALICE', 'KAHLU.CO')).to eq(@account)
+        expect(Account.find_remote('ALICE', 'kik.COM')).to eq(@account)
       end
 
       it 'returns nil when username does not match' do
-        expect(Account.find_remote('a_ice', 'kahlu.co')).to be_nil
+        expect(Account.find_remote('a_ice', 'kik.com')).to be_nil
       end
 
       it 'returns nil when domain does not match' do
@@ -90,11 +90,11 @@ describe AccountFinderConcern do
 
     describe '.find_remote!' do
       it 'returns matching result' do
-        expect(Account.find_remote!('alice', 'kahlu.co')).to eq(@account)
+        expect(Account.find_remote!('alice', 'kik.com')).to eq(@account)
       end
 
       it 'raises on non-matching result' do
-        expect { Account.find_remote!('missing', 'kahlu.host') }.to raise_error(ActiveRecord::RecordNotFound)
+        expect { Account.find_remote!('missing', 'kik.host') }.to raise_error(ActiveRecord::RecordNotFound)
       end
 
       it 'raises with blank username' do

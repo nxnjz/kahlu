@@ -50,7 +50,7 @@ RSpec.describe OStatus::AtomSerializer do
       expect(element['xmlns:poco']).to eq OStatus::TagManager::POCO_XMLNS
       expect(element['xmlns:media']).to eq OStatus::TagManager::MEDIA_XMLNS
       expect(element['xmlns:ostatus']).to eq OStatus::TagManager::OS_XMLNS
-      expect(element['xmlns:kahlu']).to eq OStatus::TagManager::MTDN_XMLNS
+      expect(element['xmlns:kiksocial']).to eq OStatus::TagManager::MTDN_XMLNS
     end
   end
 
@@ -273,21 +273,21 @@ RSpec.describe OStatus::AtomSerializer do
       author.nodes.each { |node| expect(node.name).not_to eq 'poco:displayName' }
     end
 
-    it "appends kahlu:scope element with 'private' if locked" do
+    it "appends kiksocial:scope element with 'private' if locked" do
       account = Fabricate(:account, locked: true)
 
       author = OStatus::AtomSerializer.new.author(account)
 
-      scope = author.nodes.find { |node| node.name == 'kahlu:scope' }
+      scope = author.nodes.find { |node| node.name == 'kiksocial:scope' }
       expect(scope.text).to eq 'private'
     end
 
-    it "appends kahlu:scope element with 'public' if unlocked" do
+    it "appends kiksocial:scope element with 'public' if unlocked" do
       account = Fabricate(:account, locked: false)
 
       author = OStatus::AtomSerializer.new.author(account)
 
-      scope = author.nodes.find { |node| node.name == 'kahlu:scope' }
+      scope = author.nodes.find { |node| node.name == 'kiksocial:scope' }
       expect(scope.text).to eq 'public'
     end
 
@@ -398,12 +398,12 @@ RSpec.describe OStatus::AtomSerializer do
         expect(enclosure[:href]).to match /^https:\/\/cb6e6126.ngrok.io\/system\/media_attachments\/files\/.+\/original\/attachment.jpg$/
       end
 
-      it 'appends kahlu:scope element with visibility' do
+      it 'appends kiksocial:scope element with visibility' do
         status = Fabricate(:status, visibility: :public)
 
         entry = OStatus::AtomSerializer.new.entry(status.stream_entry)
 
-        scope = entry.nodes.find { |node| node.name == 'kahlu:scope' }
+        scope = entry.nodes.find { |node| node.name == 'kiksocial:scope' }
         expect(scope.text).to eq 'public'
       end
 

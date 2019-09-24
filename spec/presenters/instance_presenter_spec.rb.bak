@@ -85,14 +85,14 @@ describe InstancePresenter do
   end
 
   describe '#version_number' do
-    it 'returns Kahlu::Version' do
-      expect(instance_presenter.version_number).to be(Kahlu::Version)
+    it 'returns KikSocial::Version' do
+      expect(instance_presenter.version_number).to be(KikSocial::Version)
     end
   end
 
   describe '#source_url' do
-    it 'returns "https://github.com/datgb/kahlu"' do
-      expect(instance_presenter.source_url).to eq('https://github.com/datgb/kahlu')
+    it 'returns "https://github.com/datgb/kik-social"' do
+      expect(instance_presenter.source_url).to eq('https://github.com/datgb/kik-social')
     end
   end
 

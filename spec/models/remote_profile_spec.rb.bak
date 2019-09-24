@@ -91,8 +91,8 @@ RSpec.describe RemoteProfile do
 
     it 'calls author.at_xpath.content' do
       expect(author).to receive_message_chain(:at_xpath, :content).with(
-        './kahlu:scope',
-        kahlu: OStatus::TagManager::MTDN_XMLNS
+        './kiksocial:scope',
+        kiksocial: OStatus::TagManager::MTDN_XMLNS
       ).with(no_args)
 
       remote_profile.scope

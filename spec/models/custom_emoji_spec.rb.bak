@@ -77,11 +77,11 @@ RSpec.describe CustomEmoji, type: :model do
   end
 
   describe 'pre_validation' do
-    let(:custom_emoji) { Fabricate(:custom_emoji, domain: 'www.kahlu.co') }
+    let(:custom_emoji) { Fabricate(:custom_emoji, domain: 'wWw.kik.cOm') }
 
     it 'should downcase' do
       custom_emoji.valid?
-      expect(custom_emoji.domain).to eq('www.kahlu.co')
+      expect(custom_emoji.domain).to eq('www.kik.com')
     end
   end
 end

@@ -202,7 +202,7 @@ RSpec.describe User, type: :model do
     around(:each) do |example|
       old_whitelist = Rails.configuration.x.email_whitelist
 
-      Rails.configuration.x.email_domains_whitelist = 'kahlu.space'
+      Rails.configuration.x.email_domains_whitelist = 'kik.space'
 
       example.run
 
@@ -215,12 +215,12 @@ RSpec.describe User, type: :model do
     end
 
     it 'should allow a user to be created if they are whitelisted' do
-      user = User.new(email: 'foo@kahlu.space', account: account, password: password, agreement: true)
+      user = User.new(email: 'foo@kik.space', account: account, password: password, agreement: true)
       expect(user.valid?).to be_truthy
     end
 
     it 'should not allow a user with a whitelisted top domain as subdomain in their email address to be created' do
-      user = User.new(email: 'foo@kahlu.space.userdomain.com', account: account, password: password, agreement: true)
+      user = User.new(email: 'foo@kik.space.userdomain.com', account: account, password: password, agreement: true)
       expect(user.valid?).to be_falsey
     end
 
@@ -232,9 +232,9 @@ RSpec.describe User, type: :model do
       end
 
       it 'should not allow a user to be created with a specific blacklisted subdomain even if the top domain is whitelisted' do
-        Rails.configuration.x.email_domains_blacklist = 'blacklisted.kahlu.space'
+        Rails.configuration.x.email_domains_blacklist = 'blacklisted.kik.space'
 
-        user = User.new(email: 'foo@blacklisted.kahlu.space', account: account, password: password)
+        user = User.new(email: 'foo@blacklisted.kik.space', account: account, password: password)
         expect(user.valid?).to be_falsey
       end
     end
@@ -242,7 +242,7 @@ RSpec.describe User, type: :model do
 
   it_behaves_like 'Settings-extended' do
     def create!
-      User.create!(account: Fabricate(:account), email: 'foo@kahlu.space', password: 'abcd1234', agreement: true)
+      User.create!(account: Fabricate(:account), email: 'foo@kik.space', password: 'abcd1234', agreement: true)
     end
 
     def fabricate
