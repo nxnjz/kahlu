@@ -4,7 +4,7 @@ RSpec.describe ProcessFeedService, type: :service do
   subject { ProcessFeedService.new }
 
   describe 'processing a feed' do
-    let(:body) { File.read(Rails.root.join('spec', 'fixtures', 'xml', 'kahlu.atom')) }
+    let(:body) { File.read(Rails.root.join('spec', 'fixtures', 'xml', 'kiksocial.atom')) }
     let(:account) { Fabricate(:account, username: 'localhost', domain: 'kickass.zone') }
 
     before do
@@ -108,7 +108,7 @@ RSpec.describe ProcessFeedService, type: :service do
 
     real_body = <<XML
 <?xml version="1.0"?>
-<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kahlu="http://kahlu.co/schema/1.0">
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kiksocial="http://kik.com/schema/1.0">
   <id>tag:overwatch.com,2017-04-27:objectId=4467137:objectType=Status</id>
   <published>2017-04-27T13:49:25Z</published>
   <updated>2017-04-27T13:49:25Z</updated>
@@ -130,7 +130,7 @@ XML
 
     body = <<XML
 <?xml version="1.0"?>
-<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kahlu="http://kahlu.co/schema/1.0">
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kiksocial="http://kik.com/schema/1.0">
   <id>tag:talon.xyz,2017-04-27:objectId=4467137:objectType=Status</id>
   <published>2017-04-27T13:49:25Z</published>
   <updated>2017-04-27T13:49:25Z</updated>
@@ -173,7 +173,7 @@ XML
 
     body = <<XML
 <?xml version="1.0"?>
-<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kahlu="http://kahlu.co/schema/1.0">
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kiksocial="http://kik.com/schema/1.0">
   <id>tag:overwatch.com,2017-04-27:objectId=4467137:objectType=Status</id>
   <published>2017-04-27T13:49:25Z</published>
   <updated>2017-04-27T13:49:25Z</updated>
@@ -211,7 +211,7 @@ XML
 
     delete_body = <<XML
 <?xml version="1.0"?>
-<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kahlu="http://kahlu.co/schema/1.0">
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kiksocial="http://kik.com/schema/1.0">
   <id>tag:overwatch.com,2017-04-27:objectId=4487555:objectType=Status</id>
   <published>2017-04-27T13:49:25Z</published>
   <updated>2017-04-27T13:49:25Z</updated>
@@ -228,7 +228,7 @@ XML
 
     status_body = <<XML
 <?xml version="1.0"?>
-<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kahlu="http://kahlu.co/schema/1.0">
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kiksocial="http://kik.com/schema/1.0">
   <id>tag:overwatch.com,2017-04-27:objectId=4487555:objectType=Status</id>
   <published>2017-04-27T13:49:25Z</published>
   <updated>2017-04-27T13:49:25Z</updated>

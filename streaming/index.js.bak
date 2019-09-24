@@ -1,5 +1,5 @@
-// Kahlu Stream API
-// Copyright (C) 2019 Gab AI, Inc.
+// kik Social Stream API
+// Copyright (C) 2019 kik AI, Inc.
 // License: AGPL-3.0
 
 'use strict';
@@ -91,16 +91,16 @@ const startWorker = (workerId) => {
     development: {
       user:     process.env.DB_USER || pg.defaults.user,
       password: process.env.DB_PASS || pg.defaults.password,
-      database: process.env.DB_NAME || 'kahlu_development',
+      database: process.env.DB_NAME || 'kiksocial_development',
       host:     process.env.DB_HOST || pg.defaults.host,
       port:     process.env.DB_PORT || pg.defaults.port,
       max:      10,
     },
 
     production: {
-      user:     process.env.DB_USER || 'kahlu',
+      user:     process.env.DB_USER || 'kiksocial',
       password: process.env.DB_PASS || '',
-      database: process.env.DB_NAME || 'kahlu_production',
+      database: process.env.DB_NAME || 'kiksocial_production',
       host:     process.env.DB_HOST || 'localhost',
       port:     process.env.DB_PORT || 5432,
       max:      10,

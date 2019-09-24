@@ -5,7 +5,7 @@ RSpec.describe ProcessMentionsService, type: :service do
   let(:visibility) { :public }
   let(:status)     { Fabricate(:status, account: account, text: "Hello @#{remote_user.acct}", visibility: visibility) }
 
-  context 'OStatus with public kahlu' do
+  context 'OStatus with public kik' do
     let(:remote_user) { Fabricate(:account, username: 'remote_user', protocol: :ostatus, domain: 'example.com', salmon_url: 'http://salmon.example.com') }
 
     subject { ProcessMentionsService.new }
@@ -24,7 +24,7 @@ RSpec.describe ProcessMentionsService, type: :service do
     end
   end
 
-  context 'OStatus with private kahlu' do
+  context 'OStatus with private kik' do
     let(:visibility)  { :private }
     let(:remote_user) { Fabricate(:account, username: 'remote_user', protocol: :ostatus, domain: 'example.com', salmon_url: 'http://salmon.example.com') }
 
