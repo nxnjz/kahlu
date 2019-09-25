@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 const ColumnLink = ({ icon, text, to, href, method, badge }) => {
   const badgeElement = typeof badge !== 'undefined' ? <span className='column-link__badge'>{badge}</span> : null;

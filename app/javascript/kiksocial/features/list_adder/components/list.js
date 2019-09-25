@@ -6,7 +6,7 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import IconButton from '../../../components/icon_button';
 import { defineMessages, injectIntl } from 'react-intl';
 import { removeFromListAdder, addToListAdder } from '../../../actions/lists';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 const messages = defineMessages({
   remove: { id: 'lists.account.remove', defaultMessage: 'Remove from list' },

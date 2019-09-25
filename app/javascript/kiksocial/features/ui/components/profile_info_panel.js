@@ -5,13 +5,13 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
-import Button from 'kiksocial/components/button';
+import Button from 'kahlu/components/button';
 import ImmutablePureComponent from 'react-immutable-pure-component';
-import Icon from 'kiksocial/components/icon';
-import VerificationBadge from 'kiksocial/components/verification_badge';
-import ProBadge from 'kiksocial/components/pro_badge';
-import DonorBadge from 'kiksocial/components/donor_badge';
-import InvestorBadge from 'kiksocial/components/investor_badge';
+import Icon from 'kahlu/components/icon';
+import VerificationBadge from 'kahlu/components/verification_badge';
+import ProBadge from 'kahlu/components/pro_badge';
+import DonorBadge from 'kahlu/components/donor_badge';
+import InvestorBadge from 'kahlu/components/investor_badge';
 import { List as ImmutableList } from 'immutable';
 
 const messages = defineMessages({

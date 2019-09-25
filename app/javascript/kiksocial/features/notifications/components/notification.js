@@ -7,7 +7,7 @@ import { injectIntl, FormattedMessage } from 'react-intl';
 import Permalink from '../../../components/permalink';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { HotKeys } from 'react-hotkeys';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 const notificationForScreenReader = (intl, message, timestamp) => {
   const output = [message];

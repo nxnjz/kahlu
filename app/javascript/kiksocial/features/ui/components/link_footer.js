@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage, injectIntl } from 'react-intl';
 import { Link } from 'react-router-dom';
-import { invitesEnabled, version, repository, source_url, me } from 'kiksocial/initial_state';
+import { invitesEnabled, version, repository, source_url, me } from 'kahlu/initial_state';
 import { connect } from 'react-redux';
 import { openModal } from '../../../actions/modal';
 
@@ -34,11 +34,11 @@ const LinkFooter = ({ onOpenHotkeys, account }) => (
     <p>
       <FormattedMessage
         id='getting_started.open_source_notice'
-        defaultMessage='kik Social is open source software. You can contribute or report issues on our self-hosted GitLab at {gitlab}.'
+        defaultMessage='Kahlu is open source software. It is currently under development.'
         values={{ gitlab: <span><a href={source_url} rel='noopener' target='_blank'>{repository}</a> (v{version})</span> }}
       />
     </p>
-    <p>© 2019 kik AI Inc.</p>
+    <p>© 2019 Kahlu</p>
   </div>
 );
 

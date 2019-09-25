@@ -8,11 +8,11 @@ import PropTypes from 'prop-types';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { me, profile_directory } from '../../initial_state';
-import { fetchFollowRequests } from 'kiksocial/actions/accounts';
+import { fetchFollowRequests } from 'kahlu/actions/accounts';
 import { List as ImmutableList } from 'immutable';
 import NavigationBar from '../compose/components/navigation_bar';
-import Icon from 'kiksocial/components/icon';
-import LinkFooter from 'kiksocial/features/ui/components/link_footer';
+import Icon from 'kahlu/components/icon';
+import LinkFooter from 'kahlu/features/ui/components/link_footer';
 
 const messages = defineMessages({
   home_timeline: { id: 'tabs_bar.home', defaultMessage: 'Home' },
@@ -25,7 +25,7 @@ const messages = defineMessages({
   blocks: { id: 'navigation_bar.blocks', defaultMessage: 'Blocked users' },
   domain_blocks: { id: 'navigation_bar.domain_blocks', defaultMessage: 'Hidden domains' },
   mutes: { id: 'navigation_bar.mutes', defaultMessage: 'Muted users' },
-  pins: { id: 'navigation_bar.pins', defaultMessage: 'Pinned kiks' },
+  pins: { id: 'navigation_bar.pins', defaultMessage: 'Pinned shouts' },
   lists: { id: 'navigation_bar.lists', defaultMessage: 'Lists' },
   discover: { id: 'navigation_bar.discover', defaultMessage: 'Discover' },
   personal: { id: 'navigation_bar.personal', defaultMessage: 'Personal' },

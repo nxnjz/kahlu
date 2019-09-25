@@ -7,8 +7,8 @@ import Column from '../ui/components/column';
 import StatusList from '../../components/status_list';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import ImmutablePureComponent from 'react-immutable-pure-component';
-import { meUsername } from 'kiksocial/initial_state';
-import MissingIndicator from 'kiksocial/components/missing_indicator';
+import { meUsername } from 'kahlu/initial_state';
+import MissingIndicator from 'kahlu/components/missing_indicator';
 
 const mapStateToProps = (state, { params: { username } }) => {
   return {

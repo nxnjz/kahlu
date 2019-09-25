@@ -15,8 +15,8 @@ import { FormattedMessage } from 'react-intl';
 import AccountContainer from '../../containers/account_container';
 import Column from '../ui/components/column';
 import ScrollableList from '../../components/scrollable_list';
-import MissingIndicator from 'kiksocial/components/missing_indicator';
-import { me } from 'kiksocial/initial_state';
+import MissingIndicator from 'kahlu/components/missing_indicator';
+import { me } from 'kahlu/initial_state';
 
 const mapStateToProps = (state, { params: { username }, withReplies = false }) => {
   const accounts = state.getIn(['accounts']);

@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { defineMessages, injectIntl } from 'react-intl';
 import { fetchListSuggestions, clearListSuggestions, changeListSuggestions } from '../../../actions/lists';
 import classNames from 'classnames';
-import Icon from 'kiksocial/components/icon';
-import Button from 'kiksocial/components/button';
+import Icon from 'kahlu/components/icon';
+import Button from 'kahlu/components/button';
 
 const messages = defineMessages({
   search: { id: 'lists.search', defaultMessage: 'Search among people you follow' },

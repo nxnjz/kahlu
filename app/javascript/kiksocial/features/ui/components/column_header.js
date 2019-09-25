@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 export default class ColumnHeader extends React.PureComponent {
 

@@ -7,7 +7,7 @@ import { shortNumberFormat } from '../../../utils/numbers';
 import { connect } from 'react-redux';
 
 const messages = defineMessages({
-    new_statuses: { id: 'groups.sidebar-panel.item.view', defaultMessage: 'new kiks' },
+    new_statuses: { id: 'groups.sidebar-panel.item.view', defaultMessage: 'new shouts' },
     no_recent_activity: { id: 'groups.sidebar-panel.item.no_recent_activity', defaultMessage: 'No recent activity' },
 });
 

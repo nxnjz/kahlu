@@ -7,7 +7,7 @@ import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
 import Avatar from '../../../components/avatar';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import ComposeFormContainer from '../../compose/containers/compose_form_container';
-import IconButton from 'kiksocial/components/icon_button';
+import IconButton from 'kahlu/components/icon_button';
 import { openModal } from '../../../actions/modal';
 import { cancelReplyCompose } from '../../../actions/compose';
 
@@ -56,7 +56,7 @@ class ComposeModal extends ImmutablePureComponent {
     return (
       <div className='modal-root__modal compose-modal'>
         <div className='compose-modal__header'>
-          <h3 className='compose-modal__header__title'><FormattedMessage id='navigation_bar.compose' defaultMessage='Compose new kik' /></h3>
+          <h3 className='compose-modal__header__title'><FormattedMessage id='navigation_bar.compose' defaultMessage='Compose new shout' /></h3>
           <IconButton className='compose-modal__close' title={intl.formatMessage(messages.close)} icon='times' onClick={this.onClickClose} size={20} />
         </div>
         <div className='compose-modal__content'>

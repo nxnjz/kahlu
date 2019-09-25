@@ -43,7 +43,7 @@ import { HotKeys } from 'react-hotkeys';
 import { boostModal, deleteModal, me } from '../../initial_state';
 import { attachFullscreenListener, detachFullscreenListener, isFullscreen } from '../ui/util/fullscreen';
 import { textForScreenReader, defaultMediaVisibility } from '../../components/status';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 const messages = defineMessages({
   deleteConfirm: { id: 'confirmations.delete.confirm', defaultMessage: 'Delete' },
@@ -175,6 +175,10 @@ class Status extends ImmutablePureComponent {
     }
   }
 
+  handleShowRevisions = (status) => {
+    this.props.dispatch(openModal('STATUS_REVISION', { status }));
+  }
+  
   handleReplyClick = (status) => {
     let { askReplyConfirmation, dispatch, intl } = this.props;
     if (askReplyConfirmation) {

@@ -13,7 +13,7 @@ import ColumnLoading from './column_loading';
 import DrawerLoading from './drawer_loading';
 import BundleColumnError from './bundle_column_error';
 import { Compose, Notifications, HomeTimeline, CommunityTimeline, HashtagTimeline, DirectTimeline, FavouritedStatuses, ListTimeline } from '../../ui/util/async-components';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 export default @(component => injectIntl(component, { withRef: true }))
 class ColumnsArea extends ImmutablePureComponent {

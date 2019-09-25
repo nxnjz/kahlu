@@ -2,12 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import ImmutablePropTypes from 'react-immutable-proptypes';
-import { expandHashtagTimeline } from 'kiksocial/actions/timelines';
+import { expandHashtagTimeline } from 'kahlu/actions/timelines';
 import Masonry from 'react-masonry-infinite';
 import { List as ImmutableList } from 'immutable';
-import DetailedStatusContainer from 'kiksocial/features/status/containers/detailed_status_container';
+import DetailedStatusContainer from 'kahlu/features/status/containers/detailed_status_container';
 import { debounce } from 'lodash';
-import LoadingIndicator from 'kiksocial/components/loading_indicator';
+import LoadingIndicator from 'kahlu/components/loading_indicator';
 
 const mapStateToProps = (state, { hashtag }) => ({
   statusIds: state.getIn(['timelines', `hashtag:${hashtag}`, 'items'], ImmutableList()),

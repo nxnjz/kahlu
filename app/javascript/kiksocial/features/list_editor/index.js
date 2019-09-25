@@ -9,7 +9,7 @@ import Account from './components/account';
 import Search from './components/search';
 import EditListForm from './components/edit_list_form';
 import ColumnSubheading from '../ui/components/column_subheading';
-import IconButton from 'kiksocial/components/icon_button';
+import IconButton from 'kahlu/components/icon_button';
 
 const mapStateToProps = state => ({
   accountIds: state.getIn(['listEditor', 'accounts', 'items']),

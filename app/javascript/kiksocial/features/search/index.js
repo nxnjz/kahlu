@@ -1,6 +1,6 @@
 import React from 'react';
-import SearchContainer from 'kiksocial/features/compose/containers/search_container';
-import SearchResultsContainer from 'kiksocial/features/compose/containers/search_results_container';
+import SearchContainer from 'kahlu/features/compose/containers/search_container';
+import SearchResultsContainer from 'kahlu/features/compose/containers/search_results_container';
 
 const Search = () => (
   <div className='column search-page'>

@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
-import { fetchLists } from 'kiksocial/actions/lists';
+import { fetchLists } from 'kahlu/actions/lists';
 import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
 import { NavLink, withRouter } from 'react-router-dom';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 const getOrderedLists = createSelector([state => state.get('lists')], lists => {
   if (!lists) {

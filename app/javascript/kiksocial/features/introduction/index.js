@@ -48,17 +48,17 @@ const FrameInteractions = ({ onNext }) => (
     <div className='introduction__text introduction__text--columnized'>
       <div>
         <h3><FormattedMessage id='introduction.interactions.reply.headline' defaultMessage='Reply' /></h3>
-        <p><FormattedMessage id='introduction.interactions.reply.text' defaultMessage="You can reply to other people's and your own kiks, which will chain them together in a conversation." /></p>
+        <p><FormattedMessage id='introduction.interactions.reply.text' defaultMessage="You can reply to other people's and your own shouts, which will chain them together in a conversation." /></p>
       </div>
 
       <div>
         <h3><FormattedMessage id='introduction.interactions.reblog.headline' defaultMessage='Repost' /></h3>
-        <p><FormattedMessage id='introduction.interactions.reblog.text' defaultMessage="You can share other people's kiks with your followers by reposting them." /></p>
+        <p><FormattedMessage id='introduction.interactions.reblog.text' defaultMessage="You can share other people's shouts with your followers by reposting them." /></p>
       </div>
 
       <div>
         <h3><FormattedMessage id='introduction.interactions.favourite.headline' defaultMessage='Favorite' /></h3>
-        <p><FormattedMessage id='introduction.interactions.favourite.text' defaultMessage='You can save a kik for later, and let the author know that you liked it, by favouriting it.' /></p>
+        <p><FormattedMessage id='introduction.interactions.favourite.text' defaultMessage='You can save a shout for later, and let the author know that you liked it, by favouriting it.' /></p>
       </div>
     </div>
 

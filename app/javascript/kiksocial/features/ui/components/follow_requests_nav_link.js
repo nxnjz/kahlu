@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { fetchFollowRequests } from 'kiksocial/actions/accounts';
+import { fetchFollowRequests } from 'kahlu/actions/accounts';
 import { connect } from 'react-redux';
 import { NavLink, withRouter } from 'react-router-dom';
-import IconWithBadge from 'kiksocial/components/icon_with_badge';
-import { me } from 'kiksocial/initial_state';
+import IconWithBadge from 'kahlu/components/icon_with_badge';
+import { me } from 'kahlu/initial_state';
 import { List as ImmutableList } from 'immutable';
 import { FormattedMessage } from 'react-intl';
 

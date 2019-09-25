@@ -4,7 +4,7 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { defineMessages, injectIntl } from 'react-intl';
 import { connect } from 'react-redux';
 import Item from './item';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 import { Link } from 'react-router-dom';
 
 const messages = defineMessages({

@@ -11,10 +11,10 @@ import { fetchList, deleteList } from '../../actions/lists';
 import { openModal } from '../../actions/modal';
 import MissingIndicator from '../../components/missing_indicator';
 import LoadingIndicator from '../../components/loading_indicator';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 import HomeColumnHeader from '../../components/home_column_header';
 import { Link } from 'react-router-dom';
-import Button from 'kiksocial/components/button';
+import Button from 'kahlu/components/button';
 
 const messages = defineMessages({
   deleteMessage: { id: 'confirmations.delete_list.message', defaultMessage: 'Are you sure you want to permanently delete this list?' },

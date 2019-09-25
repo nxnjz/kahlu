@@ -14,7 +14,7 @@ import SearchResultsContainer from './containers/search_results_container';
 import { changeComposing } from '../../actions/compose';
 import elephantUIPlane from '../../../images/logo_ui_column_footer.png';
 import { mascot } from '../../initial_state';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 const messages = defineMessages({
   start: { id: 'getting_started.heading', defaultMessage: 'Getting started' },
@@ -24,7 +24,7 @@ const messages = defineMessages({
   community: { id: 'navigation_bar.community_timeline', defaultMessage: 'Local timeline' },
   preferences: { id: 'navigation_bar.preferences', defaultMessage: 'Preferences' },
   logout: { id: 'navigation_bar.logout', defaultMessage: 'Logout' },
-  compose: { id: 'navigation_bar.compose', defaultMessage: 'Compose new kik' },
+  compose: { id: 'navigation_bar.compose', defaultMessage: 'Compose new shout' },
 });
 
 const mapStateToProps = (state, ownProps) => ({
@@ -109,8 +109,8 @@ class Compose extends React.PureComponent {
 
             <ComposeFormContainer />
 
-            <div className='drawer__inner__kiksocial'>
-              <img alt='' dragkikle='false' src={mascot || elephantUIPlane} />
+            <div className='drawer__inner__kahlu'>
+              <img alt='' draggable='false' src={mascot || elephantUIPlane} />
             </div>
           </div>}
 

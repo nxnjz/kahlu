@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import IconWithBadge from 'kiksocial/components/icon_with_badge';
+import IconWithBadge from 'kahlu/components/icon_with_badge';
 
 const mapStateToProps = state => ({
   count: state.getIn(['notifications', 'unread']),

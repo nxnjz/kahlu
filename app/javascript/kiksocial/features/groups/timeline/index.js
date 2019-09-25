@@ -9,13 +9,13 @@ import { connectGroupStream } from '../../../actions/streaming';
 import { expandGroupTimeline } from '../../../actions/timelines';
 import MissingIndicator from '../../../components/missing_indicator';
 import LoadingIndicator from '../../../components/loading_indicator';
-import ComposeFormContainer from '../../../../kiksocial/features/compose/containers/compose_form_container';
-import { me } from 'kiksocial/initial_state';
+import ComposeFormContainer from '../../../../kahlu/features/compose/containers/compose_form_container';
+import { me } from 'kahlu/initial_state';
 import Avatar from '../../../components/avatar';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import ColumnSettingsContainer from "./containers/column_settings_container";
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 const messages = defineMessages({
   tabLatest: { id: 'group.timeline.tab_latest', defaultMessage: 'Latest' },

@@ -8,7 +8,7 @@ import { setupListAdder, resetListAdder } from '../../actions/lists';
 import { createSelector } from 'reselect';
 import List from './components/list';
 import Account from './components/account';
-import IconButton from 'kiksocial/components/icon_button';
+import IconButton from 'kahlu/components/icon_button';
 import NewListForm from '../lists/components/new_list_form';
 import ColumnSubheading from '../ui/components/column_subheading';
 // hack

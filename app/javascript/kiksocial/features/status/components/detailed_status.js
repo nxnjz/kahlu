@@ -13,8 +13,8 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import Video from '../../video';
 import scheduleIdleTask from '../../ui/util/schedule_idle_task';
 import classNames from 'classnames';
-import Icon from 'kiksocial/components/icon';
-import PollContainer from 'kiksocial/containers/poll_container';
+import Icon from 'kahlu/components/icon';
+import PollContainer from 'kahlu/containers/poll_container';
 
 export default class DetailedStatus extends ImmutablePureComponent {
 
@@ -33,12 +33,17 @@ export default class DetailedStatus extends ImmutablePureComponent {
     compact: PropTypes.bool,
     showMedia: PropTypes.bool,
     onToggleMediaVisibility: PropTypes.func,
+    onShowRevisions: PropTypes.func,
   };
 
   state = {
     height: null,
   };
 
+  handleShowRevisions = () => {
+    this.props.onShowRevisions(this.props.status);
+  }
+  
   handleOpenVideo = (media, startTime) => {
     this.props.onOpenVideo(media, startTime);
   }
@@ -77,7 +82,7 @@ export default class DetailedStatus extends ImmutablePureComponent {
       href = e.target.href;
     }
 
-    window.open(href, 'kiksocial-intent', 'width=445,height=600,resizable=no,menubar=no,status=no,scrollbars=yes');
+    window.open(href, 'kahlu-intent', 'width=445,height=600,resizable=no,menubar=no,status=no,scrollbars=yes');
   }
 
   render () {
@@ -187,11 +192,12 @@ export default class DetailedStatus extends ImmutablePureComponent {
             <DisplayName account={status.get('account')} localDomain={this.props.domain} />
           </NavLink>
 
-          {status.get('group') && (
-            <div className='status__meta'>
-              Posted in <NavLink to={`/groups/${status.getIn(['group', 'id'])}`}>{status.getIn(['group', 'title'])}</NavLink>
-            </div>
-          )}
+          {(status.get('group') || status.get('revised_at') !== null) && (
+              <div className='status__meta'>
+                {status.get('group') && <React.Fragment>Posted in <NavLink to={`/groups/${status.getIn(['group', 'id'])}`}>{status.getIn(['group', 'title'])}</NavLink></React.Fragment>}
+                {status.get('revised_at') !== null && <a onClick={this.handleShowRevisions}> Edited</a>}
+              </div>
+            )}
 
           <StatusContent status={status} expanded={!status.get('hidden')} onExpandedToggle={this.handleExpandedToggle} />
 

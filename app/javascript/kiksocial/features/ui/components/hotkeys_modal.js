@@ -2,7 +2,7 @@ import React from 'react';
 import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 import ImmutablePureComponent from 'react-immutable-pure-component';
-import IconButton from 'kiksocial/components/icon_button';
+import IconButton from 'kahlu/components/icon_button';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
@@ -93,7 +93,7 @@ class HotkeysModal extends ImmutablePureComponent {
                 </tr>
                 <tr>
                   <td><kbd>alt</kbd> + <kbd>n</kbd></td>
-                  <td><FormattedMessage id='keyboard_shortcuts.toot' defaultMessage='start a brand new kik' /></td>
+                  <td><FormattedMessage id='keyboard_shortcuts.toot' defaultMessage='start a brand new shout' /></td>
                 </tr>
                 <tr>
                   <td><kbd>backspace</kbd></td>
@@ -138,7 +138,7 @@ class HotkeysModal extends ImmutablePureComponent {
                 </tr>
                 <tr>
                   <td><kbd>g</kbd> + <kbd>p</kbd></td>
-                  <td><FormattedMessage id='keyboard_shortcuts.pinned' defaultMessage='open pinned kiks list' /></td>
+                  <td><FormattedMessage id='keyboard_shortcuts.pinned' defaultMessage='open pinned shouts list' /></td>
                 </tr>
                 <tr>
                   <td><kbd>g</kbd> + <kbd>u</kbd></td>

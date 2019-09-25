@@ -9,8 +9,8 @@ import StatusList from '../../components/status_list';
 import { injectIntl, FormattedMessage } from 'react-intl';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { debounce } from 'lodash';
-import { meUsername } from 'kiksocial/initial_state';
-import MissingIndicator from 'kiksocial/components/missing_indicator';
+import { meUsername } from 'kahlu/initial_state';
+import MissingIndicator from 'kahlu/components/missing_indicator';
 
 const mapStateToProps = (state, { params: { username } }) => {
   return {
@@ -53,7 +53,7 @@ class Favourites extends ImmutablePureComponent {
       );
     }
 
-    const emptyMessage = <FormattedMessage id='empty_column.favourited_statuses' defaultMessage="You don't have any favourite kiks yet. When you favourite one, it will show up here." />;
+    const emptyMessage = <FormattedMessage id='empty_column.favourited_statuses' defaultMessage="You don't have any favourite shouts yet. When you favourite one, it will show up here." />;
 
     return (
       <Column>

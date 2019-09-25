@@ -52,12 +52,12 @@ describe('emoji_index', () => {
   it('(different behavior from emoji-mart) do not erases custom emoji if not passed again', () => {
     const custom = [
       {
-        id: 'kiksocial',
-        name: 'kiksocial',
-        short_names: ['kiksocial'],
+        id: 'kahlu',
+        name: 'kahlu',
+        short_names: ['kahlu'],
         text: '',
         emoticons: [],
-        keywords: ['kiksocial'],
+        keywords: ['kahlu'],
         imageUrl: 'http://example.com',
         custom: true,
       },
@@ -67,7 +67,7 @@ describe('emoji_index', () => {
     const expected = [];
     const lightExpected = [
       {
-        id: 'kiksocial',
+        id: 'kahlu',
         custom: true,
       },
     ];
@@ -78,12 +78,12 @@ describe('emoji_index', () => {
   it('(different behavior from emoji-mart) erases custom emoji if another is passed', () => {
     const custom = [
       {
-        id: 'kiksocial',
-        name: 'kiksocial',
-        short_names: ['kiksocial'],
+        id: 'kahlu',
+        name: 'kahlu',
+        short_names: ['kahlu'],
         text: '',
         emoticons: [],
-        keywords: ['kiksocial'],
+        keywords: ['kahlu'],
         imageUrl: 'http://example.com',
         custom: true,
       },
@@ -98,12 +98,12 @@ describe('emoji_index', () => {
   it('handles custom emoji', () => {
     const custom = [
       {
-        id: 'kiksocial',
-        name: 'kiksocial',
-        short_names: ['kiksocial'],
+        id: 'kahlu',
+        name: 'kahlu',
+        short_names: ['kahlu'],
         text: '',
         emoticons: [],
-        keywords: ['kiksocial'],
+        keywords: ['kahlu'],
         imageUrl: 'http://example.com',
         custom: true,
       },
@@ -112,7 +112,7 @@ describe('emoji_index', () => {
     emojiIndex.search('', { custom });
     const expected = [
       {
-        id: 'kiksocial',
+        id: 'kahlu',
         custom: true,
       },
     ];

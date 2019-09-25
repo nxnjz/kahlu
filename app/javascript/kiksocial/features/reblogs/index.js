@@ -67,7 +67,7 @@ class Reblogs extends ImmutablePureComponent {
       );
     }
 
-    const emptyMessage = <FormattedMessage id='status.reblogs.empty' defaultMessage='No one has reposted this kik yet. When someone does, they will show up here.' />;
+    const emptyMessage = <FormattedMessage id='status.reblogs.empty' defaultMessage='No one has reposted this shout yet. When someone does, they will show up here.' />;
 
     return (
       <Column>
