@@ -40,7 +40,7 @@ const mapStateToProps = (state) => {
 }
 
 @connect(mapStateToProps)
-class KikSocialMount extends React.PureComponent {
+class KahluMount extends React.PureComponent {
 
   static propTypes = {
     showIntroduction: PropTypes.bool,
@@ -65,7 +65,7 @@ class KikSocialMount extends React.PureComponent {
 
 }
 
-export default class KikSocial extends React.PureComponent {
+export default class Kahlu extends React.PureComponent {
 
   static propTypes = {
     locale: PropTypes.string.isRequired,
@@ -90,7 +90,7 @@ export default class KikSocial extends React.PureComponent {
       <IntlProvider locale={locale} messages={messages}>
         <Provider store={store}>
           <ErrorBoundary>
-            <KikSocialMount />
+            <KahluMount />
           </ErrorBoundary>
         </Provider>
       </IntlProvider>
