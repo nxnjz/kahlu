@@ -47,7 +47,7 @@ class ProcessInteractionService < BaseService
         reflect_unblock!(account, target_account)
       end
     end
-  rescue HTTP::Error, OStatus2::BadSalmonError, KikSocial::NotPermittedError
+  rescue HTTP::Error, OStatus2::BadSalmonError, Kahlu::NotPermittedError
     nil
   end
 

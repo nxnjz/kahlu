@@ -10,7 +10,7 @@ class Api::Web::EmbedsController < Api::Web::BaseController
     render json: status, serializer: OEmbedSerializer, width: 400
   rescue ActiveRecord::RecordNotFound
     oembed = FetchOEmbedService.new.call(params[:url])
-    oembed[:html] = Formatter.instance.sanitize(oembed[:html], Sanitize::Config::kikSOCIAL_OEMBED) if oembed[:html].present?
+    oembed[:html] = Formatter.instance.sanitize(oembed[:html], Sanitize::Config::KAHLU_OEMBED) if oembed[:html].present?
 
     if oembed
       render json: oembed

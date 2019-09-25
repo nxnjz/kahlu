@@ -141,7 +141,7 @@ class ActivityPub::Activity
 
     return status unless status.nil?
 
-    # If the reposted kik is embedded and it is a self-repost, handle it like a Create
+    # If the reposted shout is embedded and it is a self-repost, handle it like a Create
     unless unsupported_object_type?
       actor_id = value_or_id(first_of_value(@object['attributedTo'])) || @account.uri
 

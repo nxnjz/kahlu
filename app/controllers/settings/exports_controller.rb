@@ -13,7 +13,7 @@ class Settings::ExportsController < Settings::BaseController
   end
 
   def create
-    raise KikSocial::NotPermittedError unless user_signed_in?
+    raise Kahlu::NotPermittedError unless user_signed_in?
 
     backup = nil
 
@@ -22,7 +22,7 @@ class Settings::ExportsController < Settings::BaseController
         authorize :backup, :create?
         backup = current_user.backups.create!
       else
-        raise KikSocial::RaceConditionError
+        raise Kahlu::RaceConditionError
       end
     end
 

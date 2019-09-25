@@ -16,7 +16,7 @@ class OStatus::Activity::Creation < OStatus::Activity::Base
         return [@status, false] unless @status.nil?
         @status = process_status
       else
-        raise KikSocial::RaceConditionError
+        raise Kahlu::RaceConditionError
       end
     end
 

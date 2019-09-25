@@ -1,15 +1,15 @@
 'use strict';
 
-import loadPolyfills from '../kiksocial/load_polyfills';
-import { start } from '../kiksocial/common';
+import loadPolyfills from '../kahlu/load_polyfills';
+import { start } from '../kahlu/common';
 
 start();
 
 function loaded() {
-  const TimelineContainer = require('../kiksocial/containers/timeline_container').default;
+  const TimelineContainer = require('../kahlu/containers/timeline_container').default;
   const React             = require('react');
   const ReactDOM          = require('react-dom');
-  const mountNode         = document.getElementById('kiksocial-timeline');
+  const mountNode         = document.getElementById('kahlu-timeline');
 
   if (mountNode !== null) {
     const props = JSON.parse(mountNode.getAttribute('data-props'));
@@ -18,7 +18,7 @@ function loaded() {
 }
 
 function main() {
-  const ready = require('../kiksocial/ready').default;
+  const ready = require('../kahlu/ready').default;
   ready(loaded);
 }
 

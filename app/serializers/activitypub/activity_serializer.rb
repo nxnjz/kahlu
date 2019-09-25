@@ -45,7 +45,7 @@ class ActivityPub::ActivitySerializer < ActivityPub::Serializer
 
   def serialize_object?
     return true unless announce?
-    # Serialize private self-reposts of local kiks
+    # Serialize private self-reposts of local shouts
     object.account == object.proper.account && object.proper.private_visibility? && object.local?
   end
 end

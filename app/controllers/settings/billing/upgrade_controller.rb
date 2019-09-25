@@ -7,7 +7,7 @@ class Settings::Billing::UpgradeController < Settings::BaseController
 
 	def init_client
 		@client = Btcpay::Client.new(
-			api_uri: 'https://btcpay.kik.com',
+			api_uri: 'https://btcpay.kahlu.co',
 			legacy_token: ENV['BTCPAY_LEGACY_TOKEN'],
 			pub_key: ENV['BTCPAY_PUB_KEY'],
 			client_id: ENV['BTCPAY_PUB_KEY'],
@@ -26,7 +26,7 @@ class Settings::Billing::UpgradeController < Settings::BaseController
 			notificationUrl: settings_billing_btcpay_notification_url,
 			itemCode: item[:code],
 			itemDesc: item[:desc],
-			buyer: {email: current_user.email, name: "kik Social ##{current_user.id}"}
+			buyer: {email: current_user.email, name: "Kahlu ##{current_user.id}"}
 		}
 
 		# Create invoice
@@ -82,7 +82,7 @@ class Settings::Billing::UpgradeController < Settings::BaseController
 			when '5Y'
 				{code: 'PRO-5Y', desc: 'PRO - 5 Years', price: '200.00', months: 60}
 			else
-				raise KikSocial::ValidationError.new 'Plan not selected.'
+				raise Kahlu::ValidationError.new 'Plan not selected.'
 		end
 	end
 end

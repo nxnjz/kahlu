@@ -52,7 +52,7 @@ class Settings::PreferencesController < Settings::BaseController
       :setting_show_application,
       :setting_advanced_layout,
       :setting_group_in_home_feed,
-      notification_emails: %i(follow follow_request reblog favourite mention digest report pending_account emails_from_kikcom),
+      notification_emails: %i(follow follow_request reblog favourite mention digest report pending_account emails_from_kahlucom),
       interactions: %i(must_be_follower must_be_following)
     )
   end

@@ -39,18 +39,18 @@ class GroupPolicy < ApplicationPolicy
 
   def join?
     check_archive!
-    raise KikSocial::ValidationError, "Account is already a member of this group." if is_member?
-    raise KikSocial::ValidationError, "Account is removed from this group." if is_removed?
+    raise Kahlu::ValidationError, "Account is already a member of this group." if is_member?
+    raise Kahlu::ValidationError, "Account is removed from this group." if is_removed?
 
     return true
   end
 
   def leave?
     check_archive!
-    raise KikSocial::ValidationError, "Group member account not found." if not is_member?
+    raise Kahlu::ValidationError, "Group member account not found." if not is_member?
     
     is_account_the_only_admin = (is_group_admin? and record.group_accounts.where(role: :admin).count == 1)
-    raise KikSocial::ValidationError, "This is the last admin of this group." if is_account_the_only_admin
+    raise Kahlu::ValidationError, "This is the last admin of this group." if is_account_the_only_admin
 
     return true
   end
@@ -86,6 +86,6 @@ class GroupPolicy < ApplicationPolicy
   end
 
   def check_archive!
-    raise KikSocial::ValidationError, "This group has been archived." if record.is_archived
+    raise Kahlu::ValidationError, "This group has been archived." if record.is_archived
   end
 end

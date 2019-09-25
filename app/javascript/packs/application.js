@@ -1,10 +1,10 @@
-import loadPolyfills from '../kiksocial/load_polyfills';
-import { start } from '../kiksocial/common';
+import loadPolyfills from '../kahlu/load_polyfills';
+import { start } from '../kahlu/common';
 
 start();
 
 loadPolyfills().then(() => {
-  require('../kiksocial/main').default();
+  require('../kahlu/main').default();
 }).catch(e => {
   console.error(e);
 });

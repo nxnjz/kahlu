@@ -12,7 +12,7 @@
 #
 
 class Relay < ApplicationRecord
-  PRESET_RELAY = 'https://relay.kik.com/inbox'
+  PRESET_RELAY = 'https://relay.kahlu.co/inbox'
 
   validates :inbox_url, presence: true, uniqueness: true, url: true, if: :will_save_change_to_inbox_url?
 

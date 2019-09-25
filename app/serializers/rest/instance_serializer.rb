@@ -28,7 +28,7 @@ class REST::InstanceSerializer < ActiveModel::Serializer
   end
 
   def version
-    KikSocial::Version.to_s
+    Kahlu::Version.to_s
   end
 
   def thumbnail

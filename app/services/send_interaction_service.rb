@@ -13,7 +13,7 @@ class SendInteractionService < BaseService
     return if !target_account.ostatus? || block_notification?
 
     build_request.perform do |delivery|
-      raise KikSocial::UnexpectedResponseError, delivery unless delivery.code > 199 && delivery.code < 300
+      raise Kahlu::UnexpectedResponseError, delivery unless delivery.code > 199 && delivery.code < 300
     end
   end
 

@@ -16,7 +16,7 @@ class ActivityPub::Activity::Create < ActivityPub::Activity
           postprocess_audience_and_deliver
         end
       else
-        raise KikSocial::RaceConditionError
+        raise Kahlu::RaceConditionError
       end
     end
 

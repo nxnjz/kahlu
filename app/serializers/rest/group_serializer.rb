@@ -12,11 +12,11 @@ class REST::GroupSerializer < ActiveModel::Serializer
   def clean_migrated_url
     object
       .cover_image_file_name
-      .sub("kik://groups/", "https://kik.com/media/user/")
+      .sub("kahlu://groups/", "https://kahlu.co/media/user/")
   end
 
   def cover_image_url
-    if object.cover_image_file_name and object.cover_image_file_name.start_with? "kik://groups/"
+    if object.cover_image_file_name and object.cover_image_file_name.start_with? "kahlu://groups/"
       return clean_migrated_url
     end
 

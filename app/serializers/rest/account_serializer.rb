@@ -34,7 +34,7 @@ class REST::AccountSerializer < ActiveModel::Serializer
 
   def avatar
     if object.avatar_file_name.nil? and object.avatar_remote_url and object.avatar_remote_url.start_with? "kik://avatar/"
-      return object.avatar_remote_url.sub("kik://avatar/", "https://kik.com/media/user/") 
+      return object.avatar_remote_url.sub("kahlu://avatar/", "https://kik.com/media/user/") 
     end
 
     full_asset_url(object.avatar_original_url)
@@ -42,7 +42,7 @@ class REST::AccountSerializer < ActiveModel::Serializer
 
   def avatar_static
     if object.avatar_file_name.nil? and object.avatar_remote_url and object.avatar_remote_url.start_with? "kik://avatar/"
-      return object.avatar_remote_url.sub("kik://avatar/", "https://kik.com/media/user/") 
+      return object.avatar_remote_url.sub("kahlu://avatar/", "https://kik.com/media/user/") 
     end
 
     full_asset_url(object.avatar_static_url)
@@ -50,7 +50,7 @@ class REST::AccountSerializer < ActiveModel::Serializer
 
   def header
     if object.header_file_name.nil? and object.header_remote_url and object.header_remote_url.start_with? "kik://header/"
-      return object.header_remote_url.sub("kik://header/", "https://kik.com/media/user/") 
+      return object.header_remote_url.sub("kahlu://header/", "https://kik.com/media/user/") 
     end
 
     full_asset_url(object.header_original_url)
@@ -58,7 +58,7 @@ class REST::AccountSerializer < ActiveModel::Serializer
 
   def header_static
     if object.header_file_name.nil? and object.header_remote_url and object.header_remote_url.start_with? "kik://header/"
-      return object.header_remote_url.sub("kik://header/", "https://kik.com/media/user/") 
+      return object.header_remote_url.sub("kahlu://header/", "https://kik.com/media/user/") 
     end
 
     full_asset_url(object.header_static_url)

@@ -22,7 +22,7 @@ class ProofProvider::Keybase::Worker
     proof  = proof_id.is_a?(AccountIdentityProof) ? proof_id : AccountIdentityProof.find(proof_id)
     status = proof.provider_instance.verifier.status
 
-    # If Keybase thinks the proof is valid, and it exists here in kik Social,
+    # If Keybase thinks the proof is valid, and it exists here in Kahlu,
     # then it should be live. Keybase just has to notice that it's here
     # and then update its state. That might take a couple seconds.
     raise ProofProvider::Keybase::ExpectedProofLiveError if status['proof_valid'] && !status['proof_live']

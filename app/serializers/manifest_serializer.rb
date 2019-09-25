@@ -18,7 +18,7 @@ class ManifestSerializer < ActiveModel::Serializer
   end
 
   def description
-    strip_tags(object.site_short_description.presence || I18n.t('about.about_kiksocial_html'))
+    strip_tags(object.site_short_description.presence || I18n.t('about.about_kahlu_html'))
   end
 
   def icons

@@ -3,7 +3,7 @@
 class SidekiqErrorHandler
   def call(*)
     yield
-  rescue KikSocial::HostValidationError => e
+  rescue Kahlu::HostValidationError => e
     Rails.logger.error "#{e.class}: #{e.message}"
     Rails.logger.error e.backtrace.join("\n")
     # Do not retry

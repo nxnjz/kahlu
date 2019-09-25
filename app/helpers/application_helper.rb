@@ -33,7 +33,7 @@ module ApplicationHelper
 
   def available_sign_up_path
     if closed_registrations?
-      'https://kik.com/hosting#getting-started'
+      'https://kahlu.co/hosting#getting-started'
     else
       new_user_registration_path
     end

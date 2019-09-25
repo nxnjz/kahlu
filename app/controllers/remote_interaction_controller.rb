@@ -37,7 +37,7 @@ class RemoteInteractionController < ApplicationController
   def set_status
     @status = Status.find(params[:id])
     authorize @status, :show?
-  rescue KikSocial::NotPermittedError
+  rescue Kahlu::NotPermittedError
     # Reraise in order to get a 404
     raise ActiveRecord::RecordNotFound
   end

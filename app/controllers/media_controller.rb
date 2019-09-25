@@ -28,7 +28,7 @@ class MediaController < ApplicationController
 
   def verify_permitted_status!
     authorize @media_attachment.status, :show?
-  rescue KikSocial::NotPermittedError
+  rescue Kahlu::NotPermittedError
     # Reraise in order to get a 404 instead of a 403 error code
     raise ActiveRecord::RecordNotFound
   end

@@ -19,7 +19,7 @@ class Sanitize
       node['class'] = class_list.join(' ')
     end
 
-    kikSOCIAL_STRICT ||= freeze_config(
+    KAHLU_STRICT ||= freeze_config(
       elements: %w(p br span a),
 
       attributes: {
@@ -43,7 +43,7 @@ class Sanitize
       ]
     )
 
-    kikSOCIAL_OEMBED ||= freeze_config merge(
+    KAHLU_OEMBED ||= freeze_config merge(
       RELAXED,
       elements: RELAXED[:elements] + %w(audio embed iframe source video),
 

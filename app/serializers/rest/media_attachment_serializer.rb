@@ -14,15 +14,15 @@ class REST::MediaAttachmentSerializer < ActiveModel::Serializer
   def clean_migrated_url
     object
       .file_file_name
-      .sub("kik://media/", "")
-      .gsub("https://kikfiles.blob.core.windows.net/", "https://kik.com/media/")
-      .gsub("https://files.kik.com/file/files-kik/", "https://kik.com/media/")
-      .gsub("https://f002.backblazeb2.com/file/files-kik/", "https://kik.com/media/")
+      .sub("kahlu://media/", "")
+      .gsub("https://kahlufiles.blob.core.windows.net/", "https://kahlu.co/media/")
+      .gsub("https://files.kahlu.co/file/files-kahlu/", "https://kahlu.co/media/")
+      .gsub("https://f002.backblazeb2.com/file/files-kahlu/", "https://kahlu.co/media/")
       .split("|")
   end
 
   def url
-    if object.file_file_name and object.file_file_name.start_with? "kik://media/"
+    if object.file_file_name and object.file_file_name.start_with? "kahlu://media/"
       return clean_migrated_url[1]
     end
 
@@ -38,7 +38,7 @@ class REST::MediaAttachmentSerializer < ActiveModel::Serializer
   end
 
   def preview_url
-    if object.file_file_name and object.file_file_name.start_with? "kik://media/"
+    if object.file_file_name and object.file_file_name.start_with? "kahlu://media/"
       return clean_migrated_url[0]
     end
 

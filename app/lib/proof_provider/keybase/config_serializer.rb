@@ -30,7 +30,7 @@ class ProofProvider::Keybase::ConfigSerializer < ActiveModel::Serializer
   end
 
   def description
-    strip_tags(Setting.site_short_description.presence || I18n.t('about.about_kiksocial_html'))
+    strip_tags(Setting.site_short_description.presence || I18n.t('about.about_kahlu_html'))
   end
 
   def username

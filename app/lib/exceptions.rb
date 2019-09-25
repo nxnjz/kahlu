@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module KikSocial
+module Kahlu
   class Error < StandardError; end
   class NotPermittedError < Error; end
   class ValidationError < Error; end

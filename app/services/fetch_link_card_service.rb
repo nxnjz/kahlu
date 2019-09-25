@@ -32,12 +32,12 @@ class FetchLinkCardService < BaseService
         @card = PreviewCard.find_by(url: @url)
         process_url if @card.nil? || @card.updated_at <= 2.weeks.ago
       else
-        raise KikSocial::RaceConditionError
+        raise Kahlu::RaceConditionError
       end
     end
 
     attach_card if @card&.persisted?
-  rescue HTTP::Error, Addressable::URI::InvalidURIError, KikSocial::HostValidationError, KikSocial::LengthValidationError => e
+  rescue HTTP::Error, Addressable::URI::InvalidURIError, Kahlu::HostValidationError, Kahlu::LengthValidationError => e
     Rails.logger.debug "Error fetching link #{@url}: #{e}"
     nil
   end
@@ -134,7 +134,7 @@ class FetchLinkCardService < BaseService
     when 'video'
       @card.width            = embed[:width].presence  || 0
       @card.height           = embed[:height].presence || 0
-      @card.html             = Formatter.instance.sanitize(embed[:html], Sanitize::Config::kikSOCIAL_OEMBED)
+      @card.html             = Formatter.instance.sanitize(embed[:html], Sanitize::Config::KAHLU_OEMBED)
       @card.image_remote_url = (url + embed[:thumbnail_url]).to_s if embed[:thumbnail_url].present?
     when 'rich'
       # Most providers rely on <script> tags, which is a no-no

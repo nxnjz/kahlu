@@ -42,7 +42,7 @@ class Formatter
   end
 
   def reformat(html)
-    sanitize(html, Sanitize::Config::kikSOCIAL_STRICT)
+    sanitize(html, Sanitize::Config::KAHLU_STRICT)
   end
 
   def plaintext(status)
@@ -154,7 +154,7 @@ class Formatter
         emoji     = emoji_map[shortcode]
 
         if emoji
-          replacement = "<img dragkikle=\"false\" class=\"emojione\" alt=\":#{encode(shortcode)}:\" title=\":#{encode(shortcode)}:\" src=\"#{encode(emoji)}\" />"
+          replacement = "<img draggable=\"false\" class=\"emojione\" alt=\":#{encode(shortcode)}:\" title=\":#{encode(shortcode)}:\" src=\"#{encode(emoji)}\" />"
           before_html = shortname_start_index.positive? ? html[0..shortname_start_index - 1] : ''
           html        = before_html + replacement + html[i + 1..-1]
           i          += replacement.size - (shortcode.size + 2) - 1

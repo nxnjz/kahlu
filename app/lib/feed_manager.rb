@@ -188,7 +188,7 @@ class FeedManager
 
     # This filter is called from NotifyService, but already after the sender of
     # the notification has been checked for mute/block. Therefore, it's not
-    # necessary to check the author of the kik for mute/block again
+    # necessary to check the author of the shout for mute/block again
     check_for_blocks = status.active_mentions.pluck(:account_id)
     check_for_blocks.concat([status.in_reply_to_account]) if status.reply? && !status.in_reply_to_account_id.nil?
 

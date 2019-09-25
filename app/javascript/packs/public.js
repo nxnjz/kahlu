@@ -1,9 +1,9 @@
 'use strict';
 
 import escapeTextContentForBrowser from 'escape-html';
-import loadPolyfills from '../kiksocial/load_polyfills';
-import ready from '../kiksocial/ready';
-import { start } from '../kiksocial/common';
+import loadPolyfills from '../kahlu/load_polyfills';
+import ready from '../kahlu/ready';
+import { start } from '../kahlu/common';
 
 start();
 
@@ -25,10 +25,10 @@ window.addEventListener('message', e => {
 
 function main ( ) {
   const IntlMessageFormat = require('intl-messageformat').default;
-  const { timeAgoString } = require('../kiksocial/components/relative_timestamp');
+  const { timeAgoString } = require('../kahlu/components/relative_timestamp');
   const { delegate } = require('rails-ujs');
-  const emojify = require('../kiksocial/features/emoji/emoji').default;
-  const { getLocale } = require('../kiksocial/locales');
+  const emojify = require('../kahlu/features/emoji/emoji').default;
+  const { getLocale } = require('../kahlu/locales');
   const { messages } = getLocale();
   //(Rjc) 2019-05-24 defined but never used
   // const React = require('react');
@@ -84,7 +84,7 @@ function main ( ) {
     const reactComponents = document.querySelectorAll('[data-component]');
 
     if (reactComponents.length > 0) {
-      import(/* webpackChunkName: "containers/media_container" */ '../kiksocial/containers/media_container')
+      import(/* webpackChunkName: "containers/media_container" */ '../kahlu/containers/media_container')
         .then(({ default: MediaContainer }) => {
           [].forEach.call(reactComponents, (component) => {
             [].forEach.call(component.children, (child) => {
@@ -154,7 +154,7 @@ function main ( ) {
       href = e.target.href;
     }
 
-    window.open(href, 'kiksocial-intent', 'width=445,height=600,resizable=no,menubar=no,status=no,scrollbars=yes');
+    window.open(href, 'kahlu-intent', 'width=445,height=600,resizable=no,menubar=no,status=no,scrollbars=yes');
   });
 
   delegate(document, '#account_display_name', 'input', ({ target }) => {

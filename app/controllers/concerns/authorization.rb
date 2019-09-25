@@ -12,12 +12,12 @@ module Authorization
   def authorize(*)
     super
   rescue Pundit::NotAuthorizedError
-    raise KikSocial::NotPermittedError
+    raise Kahlu::NotPermittedError
   end
 
   def authorize_with(user, record, query)
     Pundit.authorize(user, record, query)
   rescue Pundit::NotAuthorizedError
-    raise KikSocial::NotPermittedError
+    raise Kahlu::NotPermittedError
   end
 end
