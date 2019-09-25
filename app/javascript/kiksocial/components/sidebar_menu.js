@@ -17,7 +17,7 @@ import { makeGetAccount } from '../selectors';
 
 const messages = defineMessages({
   followers: { id: 'account.followers', defaultMessage: 'Followers' },
-  follows: { id: 'account.follows', defaultMessage: 'Follows' },
+  follows: { id: 'account.follows', defaultMessage: 'Following' },
   profile: { id: 'account.profile', defaultMessage: 'Profile' },
   preferences: { id: 'navigation_bar.preferences', defaultMessage: 'Preferences' },
   follow_requests: { id: 'navigation_bar.follow_requests', defaultMessage: 'Follow requests' },
@@ -31,6 +31,7 @@ const messages = defineMessages({
   news: { id: 'tabs_bar.news', defaultMessage: 'News' },
   more: { id: 'sidebar.more', defaultMessage: 'More' },
   partners: { id: 'promo.partners', defaultMessage: 'Affiliate Partners' },
+  pro: { id: 'promo.kahlu_pro', defaultMessage: 'Upgrade to KahluPRO' },
 })
 
 const mapStateToProps = state => {
@@ -93,6 +94,7 @@ class SidebarMenu extends ImmutablePureComponent {
     if (!me || !account) return null;
 
     const acct = account.get('acct');
+    const isPro = account.get('is_pro');
 
     const classes = classNames('sidebar-menu__root', {
       'sidebar-menu__root--visible': sidebarOpen,
@@ -141,15 +143,22 @@ class SidebarMenu extends ImmutablePureComponent {
                 <Icon id='user' fixedWidth />
                 <span className='sidebar-menu-item__title'>{intl.formatMessage(messages.profile)}</span>
               </NavLink>
-              <a className='sidebar-menu-item' href='https://news.kik.com'>
+              {
+                !isPro &&
+                <a className='sidebar-menu-item' href='https://pro.kahlu.co'>
+                  <Icon id='arrow-up' fixedWidth />
+                  <span className='sidebar-menu-item__title'>{intl.formatMessage(messages.pro)}</span>
+                </a>
+              }
+              <a className='sidebar-menu-item' href='https://news.kahlu.co'>
                 <Icon id='align-left' fixedWidth />
                 <span className='sidebar-menu-item__title'>{intl.formatMessage(messages.news)}</span>
               </a>
-              <a className='sidebar-menu-item' href='https://news.kik.com/support-kik'>
+              <a className='sidebar-menu-item' href='https://news.kahlu.co/support'>
                 <Icon id='users' fixedWidth />
                 <span className='sidebar-menu-item__title'>{intl.formatMessage(messages.partners)}</span>
               </a>
-              <a className='sidebar-menu-item' href='https://apps.kik.com'>
+              <a className='sidebar-menu-item' href='https://apps.kahlu.co'>
                 <Icon id='th' fixedWidth />
                 <span className='sidebar-menu-item__title'>{intl.formatMessage(messages.apps)}</span>
               </a>

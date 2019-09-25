@@ -5,7 +5,7 @@ import ColumnsAreaContainer from '../containers/columns_area_container';
 import ColumnLoading from '../components/column_loading';
 import BundleColumnError from '../components/bundle_column_error';
 import BundleContainer from '../containers/bundle_container';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 
 export class WrappedRoute extends React.Component {
   static propTypes = {

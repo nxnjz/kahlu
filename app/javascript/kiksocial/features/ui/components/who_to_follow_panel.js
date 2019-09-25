@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { fetchSuggestions, dismissSuggestion } from '../../../actions/suggestions';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import ImmutablePropTypes from 'react-immutable-proptypes';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 import AccountContainer from '../../../containers/account_container';
 
 const messages = defineMessages({

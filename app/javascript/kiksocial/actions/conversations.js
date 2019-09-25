@@ -4,7 +4,7 @@ import {
   importFetchedStatuses,
   importFetchedStatus,
 } from './importer';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 
 export const CONVERSATIONS_MOUNT   = 'CONVERSATIONS_MOUNT';
 export const CONVERSATIONS_UNMOUNT = 'CONVERSATIONS_UNMOUNT';

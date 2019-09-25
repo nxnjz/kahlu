@@ -12,7 +12,7 @@ export const storageFreeable = 'storage' in navigator && 'estimate' in navigator
 function openCache() {
   // ServiceWorker and Cache API is not available on iOS 11
   // https://webkit.org/status/#specification-service-workers
-  return self.caches ? caches.open('kiksocial-system') : Promise.reject();
+  return self.caches ? caches.open('kahlu-system') : Promise.reject();
 }
 
 function printErrorIfAvailable(error) {
@@ -199,7 +199,7 @@ export function freeStorage() {
         if (retrieval.result.length > 0) {
           resolve(evictAccountsByRecords(retrieval.result).then(freeStorage));
         } else {
-          resolve(caches.delete('kiksocial-system'));
+          resolve(caches.delete('kahlu-system'));
         }
       };
 

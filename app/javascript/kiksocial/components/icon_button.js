@@ -3,7 +3,7 @@ import Motion from '../features/ui/util/optional_motion';
 import spring from 'react-motion/lib/spring';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 export default class IconButton extends React.PureComponent {
 

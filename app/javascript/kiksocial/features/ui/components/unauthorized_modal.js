@@ -6,7 +6,7 @@ import { me } from '../../../initial_state';
 import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
 import Avatar from '../../../components/avatar';
 import ImmutablePureComponent from 'react-immutable-pure-component';
-import IconButton from 'kiksocial/components/icon_button';
+import IconButton from 'kahlu/components/icon_button';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
@@ -35,7 +35,7 @@ class UnauthorizedModal extends ImmutablePureComponent {
     return (
       <div className='modal-root__modal compose-modal unauthorized-modal'>
         <div className='compose-modal__header'>
-          <h3 className='compose-modal__header__title'><FormattedMessage id='unauthorized_modal.title' defaultMessage='Sign up for kik' /></h3>
+          <h3 className='compose-modal__header__title'><FormattedMessage id='unauthorized_modal.title' defaultMessage='Sign up for Kahlu' /></h3>
           <IconButton className='compose-modal__close' title={intl.formatMessage(messages.close)} icon='times' onClick={this.onClickClose} size={20} />
         </div>
         <div className='compose-modal__content'>

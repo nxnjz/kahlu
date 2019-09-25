@@ -1,7 +1,7 @@
 import api, { getLinks } from '../api';
 import { fetchRelationships } from './accounts';
 import { importFetchedAccounts } from './importer';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 
 export const BLOCKS_FETCH_REQUEST = 'BLOCKS_FETCH_REQUEST';
 export const BLOCKS_FETCH_SUCCESS = 'BLOCKS_FETCH_SUCCESS';

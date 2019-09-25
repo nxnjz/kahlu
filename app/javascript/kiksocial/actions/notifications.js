@@ -12,7 +12,7 @@ import { defineMessages } from 'react-intl';
 import { List as ImmutableList } from 'immutable';
 import { unescapeHTML } from '../utils/html';
 import { getFilters, regexFromFilters } from '../selectors';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 
 export const NOTIFICATIONS_UPDATE      = 'NOTIFICATIONS_UPDATE';
 export const NOTIFICATIONS_UPDATE_NOOP = 'NOTIFICATIONS_UPDATE_NOOP';

@@ -1,7 +1,7 @@
 import React from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import PropTypes from 'prop-types';
-import Video from 'kiksocial/features/video';
+import Video from 'kahlu/features/video';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { FormattedMessage } from 'react-intl';
 

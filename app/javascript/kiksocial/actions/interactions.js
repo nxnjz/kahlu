@@ -1,6 +1,6 @@
 import api from '../api';
 import { importFetchedAccounts, importFetchedStatus } from './importer';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 
 export const REBLOG_REQUEST = 'REBLOG_REQUEST';
 export const REBLOG_SUCCESS = 'REBLOG_SUCCESS';

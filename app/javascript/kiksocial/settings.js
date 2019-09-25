@@ -45,5 +45,5 @@ export default class Settings {
 
 }
 
-export const pushNotificationsSetting = new Settings('kiksocial_push_notification_data');
-export const tagHistory = new Settings('kiksocial_tag_history');
+export const pushNotificationsSetting = new Settings('kahlu_push_notification_data');
+export const tagHistory = new Settings('kahlu_tag_history');

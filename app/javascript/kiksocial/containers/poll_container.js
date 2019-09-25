@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Poll from 'kiksocial/components/poll';
+import Poll from 'kahlu/components/poll';
 
 const mapStateToProps = (state, { pollId }) => ({
   poll: state.getIn(['polls', pollId]),

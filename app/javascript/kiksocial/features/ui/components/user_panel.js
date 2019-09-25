@@ -7,8 +7,8 @@ import { autoPlayGif, me } from '../../../initial_state';
 import { makeGetAccount } from '../../../selectors';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
-import Avatar from 'kiksocial/components/avatar';
-import { shortNumberFormat } from 'kiksocial/utils/numbers';
+import Avatar from 'kahlu/components/avatar';
+import { shortNumberFormat } from 'kahlu/utils/numbers';
 
 class UserPanel extends ImmutablePureComponent {
   static propTypes = {
@@ -52,7 +52,7 @@ class UserPanel extends ImmutablePureComponent {
               <div className='user-panel-stats-item'>
                 <Link to={`/${account.get('acct')}`} title={intl.formatNumber(account.get('statuses_count'))}>
                   <strong className='user-panel-stats-item__value'>{shortNumberFormat(account.get('statuses_count'))}</strong>
-                  <span className='user-panel-stats-item__label'><FormattedMessage className='user-panel-stats-item__label' id='account.posts' defaultMessage='kiks' /></span>
+                  <span className='user-panel-stats-item__label'><FormattedMessage className='user-panel-stats-item__label' id='account.posts' defaultMessage='Shouts' /></span>
                 </Link>
               </div>
 

@@ -6,7 +6,7 @@ import {
   importFetchedAccounts,
   importErrorWhileFetchingAccountByUsername,
 } from './importer';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 
 export const ACCOUNT_FETCH_REQUEST = 'ACCOUNT_FETCH_REQUEST';
 export const ACCOUNT_FETCH_SUCCESS = 'ACCOUNT_FETCH_SUCCESS';

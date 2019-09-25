@@ -5,7 +5,7 @@ import { isRtl } from '../rtl';
 import { FormattedMessage } from 'react-intl';
 import Permalink from './permalink';
 import classnames from 'classnames';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 const MAX_HEIGHT = 642; // 20px * 32 (+ 2px padding at the top)
 

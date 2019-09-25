@@ -2,7 +2,7 @@ import api, { getLinks } from '../api';
 import { fetchRelationships } from './accounts';
 import { importFetchedAccounts } from './importer';
 import { openModal } from './modal';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 
 export const MUTES_FETCH_REQUEST = 'MUTES_FETCH_REQUEST';
 export const MUTES_FETCH_SUCCESS = 'MUTES_FETCH_SUCCESS';

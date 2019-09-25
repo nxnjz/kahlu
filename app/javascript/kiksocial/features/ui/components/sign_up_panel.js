@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { NavLink } from 'react-router-dom';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 
 const SignUpPanel = () => {
   if (me) return null;
@@ -10,7 +10,7 @@ const SignUpPanel = () => {
     <div className='wtf-panel'>
       <div className='wtf-panel-header'>
         <span className='wtf-panel-header__label'>
-          <FormattedMessage id='signup_panel.title' defaultMessage='New to kik?' />
+          <FormattedMessage id='signup_panel.title' defaultMessage='New to Kahlu?' />
         </span>
       </div>
       <div className='wtf-panel__content'>

@@ -6,7 +6,7 @@ import { getLocale } from '../locales';
 import MediaGallery from '../components/media_gallery';
 import Video from '../features/video';
 import Card from '../features/status/components/card';
-import Poll from 'kiksocial/components/poll';
+import Poll from 'kahlu/components/poll';
 import ModalRoot from '../components/modal_root';
 import MediaModal from '../features/ui/components/media_modal';
 import { List as ImmutableList, fromJS } from 'immutable';

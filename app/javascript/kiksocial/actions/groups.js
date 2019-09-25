@@ -1,5 +1,5 @@
 import api, { getLinks } from '../api';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 import { importFetchedAccounts } from './importer';
 import { fetchRelationships } from './accounts';
 

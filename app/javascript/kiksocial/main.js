@@ -1,7 +1,7 @@
 'use strict';
 
 import * as registerPushNotifications from './actions/push_notifications';
-import { default as KikSocial, store } from './containers/kiksocial';
+import { default as Kahlu, store } from './containers/kahlu';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ready from './ready';
@@ -21,10 +21,10 @@ function main() {
   // }
 
   ready(() => {
-    const mountNode = document.getElementById('kiksocial');
+    const mountNode = document.getElementById('kahlu');
     const props = JSON.parse(mountNode.getAttribute('data-props'));
 
-    ReactDOM.render(<KikSocial {...props} />, mountNode);
+    ReactDOM.render(<Kahlu {...props} />, mountNode);
     if (process.env.NODE_ENV === 'production') {
       // avoid offline in dev mode because it's harder to debug
       require('offline-plugin/runtime').install();

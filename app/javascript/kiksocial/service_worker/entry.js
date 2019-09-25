@@ -2,11 +2,11 @@
 import './web_push_notifications';
 
 // function openSystemCache() {
-//   return caches.open('kiksocial-system');
+//   return caches.open('kahlu-system');
 // }
 
 function openWebCache() {
-  return caches.open('kiksocial-web');
+  return caches.open('kahlu-web');
 }
 
 function fetchRoot() {
@@ -35,7 +35,7 @@ self.addEventListener('fetch', function(event) {
       if (response.ok || response.type === 'opaqueredirect') {
         return Promise.all([
           asyncCache.then(cache => cache.delete('/')),
-          indexedDB.deleteDatabase('kiksocial'),
+          indexedDB.deleteDatabase('kahlu'),
         ]).then(() => response);
       }
 

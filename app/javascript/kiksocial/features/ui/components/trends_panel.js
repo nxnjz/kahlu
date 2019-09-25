@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { fetchTrends } from '../../../actions/trends';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import ImmutablePropTypes from 'react-immutable-proptypes';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 import Hashtag from '../../../components/hashtag';
 
 class TrendsPanel extends ImmutablePureComponent {

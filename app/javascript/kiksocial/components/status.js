@@ -16,8 +16,8 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { MediaGallery, Video } from '../features/ui/util/async-components';
 import { HotKeys } from 'react-hotkeys';
 import classNames from 'classnames';
-import Icon from 'kiksocial/components/icon';
-import PollContainer from 'kiksocial/containers/poll_container';
+import Icon from 'kahlu/components/icon';
+import PollContainer from 'kahlu/containers/poll_container';
 import { displayMedia } from '../initial_state';
 import { NavLink } from 'react-router-dom';
 
@@ -67,6 +67,7 @@ class Status extends ImmutablePureComponent {
     otherAccounts: ImmutablePropTypes.list,
     onClick: PropTypes.func,
     onReply: PropTypes.func,
+    onShowRevisions: PropTypes.func,
     onQuote: PropTypes.func,
     onFavourite: PropTypes.func,
     onReblog: PropTypes.func,
@@ -92,7 +93,8 @@ class Status extends ImmutablePureComponent {
     cacheMediaWidth: PropTypes.func,
     cachedMediaWidth: PropTypes.number,
     group: ImmutablePropTypes.map,
-    promoted: PropTypes.bool
+    promoted: PropTypes.bool,
+    onOpenProUpgradeModal: PropTypes.func,
   };
 
   // Avoid checking props that are functions (and whose equality will always
@@ -258,6 +260,10 @@ class Status extends ImmutablePureComponent {
     this.node = c;
   }
 
+  handleOpenProUpgradeModal = () => {
+    this.props.onOpenProUpgradeModal();
+	}
+
   render () {
     let media = null;
     let statusAvatar, prepend, rebloggedByText, reblogContent;
@@ -296,16 +302,16 @@ class Status extends ImmutablePureComponent {
 
     if (promoted) {
       prepend = (
-        <div className='status__prepend'>
+        <button className='status__prepend status__prepend--promoted' onClick={this.handleOpenProUpgradeModal}>
           <div className='status__prepend-icon-wrapper'><Icon id='star' className='status__prepend-icon' fixedWidth /></div>
-          <FormattedMessage id='status.promoted' defaultMessage='Promoted kik' />
-        </div>
+          <FormattedMessage id='status.promoted' defaultMessage='Promoted gab' />
+        </button>
       );
     } else if (featured) {
       prepend = (
         <div className='status__prepend'>
           <div className='status__prepend-icon-wrapper'><Icon id='thumb-tack' className='status__prepend-icon' fixedWidth /></div>
-          <FormattedMessage id='status.pinned' defaultMessage='Pinned kik' />
+          <FormattedMessage id='status.pinned' defaultMessage='Pinned gab' />
         </div>
       );
     } else if (status.get('reblog', null) !== null && typeof status.get('reblog') === 'object') {
@@ -438,9 +444,10 @@ class Status extends ImmutablePureComponent {
               </NavLink>
             </div>
 
-            {!group && status.get('group') && (
+            {((!group && status.get('group')) || status.get('revised_at') !== null) && (
               <div className='status__meta'>
-                Posted in <NavLink to={`/groups/${status.getIn(['group', 'id'])}`}>{status.getIn(['group', 'title'])}</NavLink>
+                {!group && status.get('group') && <React.Fragment>Posted in <NavLink to={`/groups/${status.getIn(['group', 'id'])}`}>{status.getIn(['group', 'title'])}</NavLink></React.Fragment>}
+                {status.get('revised_at') !== null && <a onClick={() => other.onShowRevisions(status)}> Edited</a>}
               </div>
             )}
 

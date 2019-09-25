@@ -6,7 +6,7 @@ import { throttle } from 'lodash';
 import classNames from 'classnames';
 import { isFullscreen, requestFullscreen, exitFullscreen } from '../ui/util/fullscreen';
 import { displayMedia } from '../../initial_state';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 import { decode } from 'blurhash';
 import { isPanoramic, isPortrait, minimumAspectRatio, maximumAspectRatio } from '../../utils/media_aspect_ratio';
 

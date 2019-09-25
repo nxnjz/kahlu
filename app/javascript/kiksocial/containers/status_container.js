@@ -105,6 +105,10 @@ const mapDispatchToProps = (dispatch, { intl }) => ({
     }
   },
 
+  onShowRevisions (status) {
+    dispatch(openModal('STATUS_REVISION', { status }));
+  },
+
   onFavourite (status) {
     if (status.get('favourited')) {
       dispatch(unfavourite(status));
@@ -204,6 +208,10 @@ const mapDispatchToProps = (dispatch, { intl }) => ({
 
   onGroupRemoveStatus(groupId, statusId) {
     dispatch(groupRemoveStatus(groupId, statusId));
+  },
+
+  onOpenProUpgradeModal() {
+    dispatch(openModal('PRO_UPGRADE'));
   },
 
 });

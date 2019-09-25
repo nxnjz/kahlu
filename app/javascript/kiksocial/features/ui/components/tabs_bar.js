@@ -7,9 +7,9 @@ import { connect } from 'react-redux';
 import { me } from '../../../initial_state';
 import classNames from 'classnames';
 import NotificationsCounterIcon from './notifications_counter_icon';
-import SearchContainer from 'kiksocial/features/compose/containers/search_container';
+import SearchContainer from 'kahlu/features/compose/containers/search_container';
 import Avatar from '../../../components/avatar';
-import ActionBar from 'kiksocial/features/compose/components/action_bar';
+import ActionBar from 'kahlu/features/compose/components/action_bar';
 import { openModal } from '../../../actions/modal';
 import { openSidebar } from '../../../actions/sidebar';
 
@@ -184,8 +184,8 @@ class TabsBar extends React.PureComponent {
                   <ActionBar account={account} size={34} />
                 </div>
                 <span className='tabs-bar__page-name'>{pathTitle}</span>
-                <button className='tabs-bar__button-compose button' onClick={onOpenCompose} aria-label='kik'>
-                  <span>kik</span>
+                <button className='tabs-bar__button-compose button' onClick={onOpenCompose} aria-label='Kahlu'>
+                  <span>Kahlu</span>
                 </button>
               </div>
             }

@@ -7,9 +7,9 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import classNames from 'classnames';
 import { FormattedMessage, injectIntl, defineMessages } from 'react-intl';
 import { Link } from 'react-router-dom';
-import Icon from 'kiksocial/components/icon';
-import { me } from 'kiksocial/initial_state';
-import { fetchLists } from 'kiksocial/actions/lists';
+import Icon from 'kahlu/components/icon';
+import { me } from 'kahlu/initial_state';
+import { fetchLists } from 'kahlu/actions/lists';
 import { createSelector } from 'reselect';
 
 const messages = defineMessages({

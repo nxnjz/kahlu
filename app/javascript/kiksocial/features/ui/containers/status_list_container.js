@@ -4,7 +4,7 @@ import { Map as ImmutableMap, List as ImmutableList } from 'immutable';
 import { createSelector } from 'reselect';
 import { debounce } from 'lodash';
 import { me, promotions } from '../../../initial_state';
-import { dequeueTimeline } from 'kiksocial/actions/timelines';
+import { dequeueTimeline } from 'kahlu/actions/timelines';
 import { scrollTopTimeline } from '../../../actions/timelines';
 import { sample } from 'lodash';
 import { fetchStatus } from '../../../actions/statuses';

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'kiksocial/components/icon';
-import { shortNumberFormat } from 'kiksocial/utils/numbers';
+import Icon from 'kahlu/components/icon';
+import { shortNumberFormat } from 'kahlu/utils/numbers';
 
 const IconWithBadge = ({ id, count, className }) => {
 	if (count < 1) return null;

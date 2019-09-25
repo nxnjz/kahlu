@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { FormattedMessage, injectIntl, defineMessages } from 'react-intl';
-import Icon from 'kiksocial/components/icon';
+import Icon from 'kahlu/components/icon';
 
 const messages = defineMessages({
   show: { id: 'column_header.show_settings', defaultMessage: 'Show settings' },

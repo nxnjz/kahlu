@@ -8,7 +8,7 @@ export default () => new Promise((resolve, reject) => {
     return;
   }
 
-  const request = indexedDB.open('kiksocial');
+  const request = indexedDB.open('kahlu');
 
   request.onerror = reject;
   request.onsuccess = ({ target }) => resolve(target.result);

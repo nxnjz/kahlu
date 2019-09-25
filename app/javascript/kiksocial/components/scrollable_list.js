@@ -31,7 +31,7 @@ export default class ScrollableList extends PureComponent {
   };
 
   state = {
-    cachedMediaWidth: 250, // Default media/card width using default kik Social theme
+    cachedMediaWidth: 250, // Default media/card width using default Kahlu theme
   };
 
   intersectionObserverWrapper = new IntersectionObserverWrapper();

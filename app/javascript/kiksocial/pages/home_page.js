@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 import PropTypes from 'prop-types';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import WhoToFollowPanel from '../features/ui/components/who_to_follow_panel';

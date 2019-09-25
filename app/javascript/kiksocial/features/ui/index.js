@@ -24,11 +24,11 @@ import TabsBar from './components/tabs_bar';
 // import TrendsPanel from './components/trends_panel';
 import WhoToFollowPanel from './components/who_to_follow_panel';
 import LinkFooter from './components/link_footer';
-import ProfilePage from 'kiksocial/pages/profile_page';
-import GroupsPage from 'kiksocial/pages/groups_page';
-import GroupPage from 'kiksocial/pages/group_page';
-import SearchPage from 'kiksocial/pages/search_page';
-import HomePage from 'kiksocial/pages/home_page';
+import ProfilePage from 'kahlu/pages/profile_page';
+import GroupsPage from 'kahlu/pages/groups_page';
+import GroupPage from 'kahlu/pages/group_page';
+import SearchPage from 'kahlu/pages/search_page';
+import HomePage from 'kahlu/pages/home_page';
 import GroupSidebarPanel from '../groups/sidebar_panel';
 import SidebarMenu from '../../components/sidebar_menu';
 
@@ -74,8 +74,8 @@ import '../../components/status';
 import { fetchGroups } from '../../actions/groups';
 
 const messages = defineMessages({
-  beforeUnload: { id: 'ui.beforeunload', defaultMessage: 'Your draft will be lost if you leave kik Social.' },
-  publish: { id: 'compose_form.publish', defaultMessage: 'kik' },
+  beforeUnload: { id: 'ui.beforeunload', defaultMessage: 'Your draft will be lost if you leave Kahlu.' },
+  publish: { id: 'compose_form.publish', defaultMessage: 'Shout' },
 });
 
 const mapStateToProps = state => ({

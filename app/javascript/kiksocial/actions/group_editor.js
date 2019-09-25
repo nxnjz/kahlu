@@ -1,5 +1,5 @@
 import api from '../api';
-import { me } from 'kiksocial/initial_state';
+import { me } from 'kahlu/initial_state';
 
 export const GROUP_CREATE_REQUEST      = 'GROUP_CREATE_REQUEST';
 export const GROUP_CREATE_SUCCESS      = 'GROUP_CREATE_SUCCESS';
