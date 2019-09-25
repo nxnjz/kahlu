@@ -4,5 +4,5 @@
   %h1= "##{@tag.name}"
   %p= t('about.about_hashtag_html', hashtag: @tag.name)
 
-#kahlu-timeline{ data: { props: Oj.dump(default_props.merge(hashtag: @tag.name)) }}
+#kiksocial-timeline{ data: { props: Oj.dump(default_props.merge(hashtag: @tag.name)) }}
 #modal-container
