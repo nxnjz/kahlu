@@ -17,7 +17,7 @@ X-Runtime: 1.173933
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kiksocial="http://kahlu.co/schema/1.0">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0" xmlns:kahlu="http://kahlu.co/schema/1.0">
   <id>https://webdomain.com/users/foo.atom</id>
   <title>foo</title>
   <subtitle>foo</subtitle>

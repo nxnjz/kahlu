@@ -10,7 +10,7 @@
         width: 100%;
         max-width: 1150px;
         background: $kik-background-container;
-        body.theme-kiksocial-light & {
+        body.theme-kahlu-light & {
       		background: $kik-background-container-light;
       	}
         border-radius: 10px;
@@ -73,7 +73,7 @@
             margin-bottom: 10px;
             border-radius: 4px;
             background: $kik-background-container;
-            body.theme-kiksocial-light & {
+            body.theme-kahlu-light & {
           		background: $kik-background-container-light;
           	}
             font-size: 13px;
@@ -83,7 +83,7 @@
 
     .group__feed {
       background: $kik-background-container;
-      body.theme-kiksocial-light & {
+      body.theme-kahlu-light & {
         background: $kik-background-container-light;
       }
       border-top-left-radius: 10px;

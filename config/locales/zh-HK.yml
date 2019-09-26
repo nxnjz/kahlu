@@ -2,7 +2,7 @@
 zh-HK:
   about:
     about_hashtag_html: 這些是包含「<strong>#%{hashtag}</strong>」標籤的公開文章。只要你有任何 kik Social 服務站、或者聯盟網站的用戶，便可以與他們互動。
-    about_kiksocial_html: kik Social（萬象）是<em>自由、開源</em>的社交網絡。服務站<em>各自獨立而互連</em>，避免單一商業機構壟斷。找你所信任的服務站，建立帳號，你即可與任何服務站上的用戶溝通，享受無縫的<em>網絡交流</em>。
+    about_kahlu_html: kik Social（萬象）是<em>自由、開源</em>的社交網絡。服務站<em>各自獨立而互連</em>，避免單一商業機構壟斷。找你所信任的服務站，建立帳號，你即可與任何服務站上的用戶溝通，享受無縫的<em>網絡交流</em>。
     about_this: 關於本服務站
     administered_by: 管理者：
     contact: 聯絡
@@ -19,7 +19,7 @@ zh-HK:
     status_count_before: 他們共發佈了
     user_count_after: 位使用者
     user_count_before: 這裏共註冊有
-    what_is_kiksocial: kik Social 是甚麼？
+    what_is_kahlu: kik Social 是甚麼？
   accounts:
     follow: 關注
     followers: 關注者
@@ -638,7 +638,7 @@ zh-HK:
   themes:
     contrast: 高對比
     default: 萬象
-    kiksocial-light: 萬象（亮色主題）
+    kahlu-light: 萬象（亮色主題）
   time:
     formats:
       default: "%Y年%-m月%d日 %H:%M"

@@ -2,7 +2,7 @@
 lt:
   about:
     about_hashtag_html: Čia visiems prieinamas įrankis <strong>#%{hashtag}</strong>. Jūs galite juo naudotis bet kur, jeigu turite paskyra fedi-visatoje.
-    about_kiksocial_html: kik Social, tai socialinis tinklas pagrįstas atviro kodo programavimu, ir atvirais web protokolais. Visiškai nemokamas. Ši sistema decantrilizuota kaip jūsų elektroninis paštas.
+    about_kahlu_html: kik Social, tai socialinis tinklas pagrįstas atviro kodo programavimu, ir atvirais web protokolais. Visiškai nemokamas. Ši sistema decantrilizuota kaip jūsų elektroninis paštas.
     about_this: Apie
     administered_by: 'Administruoja:'
     api: API
@@ -30,7 +30,7 @@ lt:
       one: vartotojas
       other: vartotojai
     user_count_before: Namai
-    what_is_kiksocial: Kas tai, kik Social?
+    what_is_kahlu: Kas tai, kik Social?
   accounts:
     choices_html: "%{name} pasirinkimai:"
     follow: Sekti
@@ -548,7 +548,7 @@ lt:
     enabled: Jūs esate rodomas šioje direktorijoje.
     enabled_but_waiting: Jūs pasirinkote būti įtrauktas į direktorija, bet jūs neturite minimalaus sekėjų skaičiaus (%{min_followers}), kad būtumėte rodomas.
     explanation: Raskite vartotojus, remiantis tuo, kuo jie domisi
-    explore_kiksocial: Naršyti %{title}
+    explore_kahlu: Naršyti %{title}
     how_to_enable: Jūs nesate prisijungęs prie šios direktorijos. Galite prisijungti žemiau. Naudokite saitažodžius savo biografiniame tekste, kad būtumėte rastas naudojantis specifinius saitažodžius!
     people:
       few: "%{count} žmonės"
@@ -924,7 +924,7 @@ lt:
   themes:
     contrast: kik Social (Didelio Kontrasto)
     default: kik Social (Tamsus)
-    kiksocial-light: kik Social (Šviesus)
+    kahlu-light: kik Social (Šviesus)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

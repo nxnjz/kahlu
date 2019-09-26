@@ -2,7 +2,7 @@
 fr:
   about:
     about_hashtag_html: Figurent ci-dessous les pouets tagués avec <strong>#%{hashtag}</strong>. Vous pouvez interagir avec eux si vous avez un compte n’importe où dans le Fediverse.
-    about_kiksocial_html: kik Social est un réseau social utilisant des formats ouverts et des logiciels libres. Comme le courriel, il est décentralisé.
+    about_kahlu_html: kik Social est un réseau social utilisant des formats ouverts et des logiciels libres. Comme le courriel, il est décentralisé.
     about_this: À propos
     administered_by: 'Administrée par :'
     api: API
@@ -28,7 +28,7 @@ fr:
       one: utilisateur
       other: utilisateurs
     user_count_before: Abrite
-    what_is_kiksocial: Qu’est-ce que kik Social ?
+    what_is_kahlu: Qu’est-ce que kik Social ?
   accounts:
     choices_html: "%{name} recommande :"
     follow: Suivre
@@ -540,7 +540,7 @@ fr:
     enabled: Vous êtes actuellement listé dans l'annuaire.
     enabled_but_waiting: Vous avez choisi d'être listé dans l'annuaire, mais vous n'avez pas encore le nombre minimum de suiveurs (%{min_followers}) pour y être inscrit.
     explanation: Découvrir des utilisateurs en se basant sur leurs centres d'intérêt
-    explore_kiksocial: Explorer %{title}
+    explore_kahlu: Explorer %{title}
     how_to_enable: Vous n'êtes pas encore inscrit dans l'annuaire. Vous pouvez vous inscrire ci-dessous. Utilisez des hashtags dans votre texte biographique pour être listé sous des hashtags spécifiques !
     people:
       one: "%{count} personne"
@@ -926,7 +926,7 @@ fr:
   themes:
     contrast: kik Social (Contraste élevé)
     default: kik Social (Sombre)
-    kiksocial-light: kik Social (Clair)
+    kahlu-light: kik Social (Clair)
   time:
     formats:
       default: "%d %b %Y, %H:%M"

@@ -2,7 +2,7 @@
 ko:
   about:
     about_hashtag_html: "<strong>#%{hashtag}</strong> 라는 해시태그가 붙은 공개 툿 입니다. 같은 연합에 속한 임의의 인스턴스에 계정을 생성하면 당신도 대화에 참여할 수 있습니다."
-    about_kiksocial_html: 마스토돈은 <em>오픈 소스 기반의</em> 소셜 네트워크 서비스 입니다. 상용 플랫폼의 대체로서 <em>분산형 구조</em>를 채택해, 여러분의 대화가 한 회사에 독점되는 것을 방지합니다. 신뢰할 수 있는 인스턴스를 선택하세요 &mdash; 어떤 인스턴스를 고르더라도, 누구와도 대화할 수 있습니다. 누구나 자신만의 마스토돈 인스턴스를 만들 수 있으며, 아주 매끄럽게 <em>소셜 네트워크</em>에 참가할 수 있습니다.
+    about_kahlu_html: 마스토돈은 <em>오픈 소스 기반의</em> 소셜 네트워크 서비스 입니다. 상용 플랫폼의 대체로서 <em>분산형 구조</em>를 채택해, 여러분의 대화가 한 회사에 독점되는 것을 방지합니다. 신뢰할 수 있는 인스턴스를 선택하세요 &mdash; 어떤 인스턴스를 고르더라도, 누구와도 대화할 수 있습니다. 누구나 자신만의 마스토돈 인스턴스를 만들 수 있으며, 아주 매끄럽게 <em>소셜 네트워크</em>에 참가할 수 있습니다.
     about_this: 이 인스턴스에 대해서
     active_count_after: 활성 사용자
     active_footnote: 월간 활성 사용자
@@ -39,7 +39,7 @@ ko:
       one: 명
       other: 명
     user_count_before: 사용자 수
-    what_is_kiksocial: 마스토돈이란?
+    what_is_kahlu: 마스토돈이란?
   accounts:
     choices_html: "%{name}의 추천:"
     follow: 팔로우
@@ -577,7 +577,7 @@ ko:
     enabled: 당신은 디렉터리에 표시 되고 있습니다.
     enabled_but_waiting: 디렉터리에 표시 되기 위해서는 수동으로 참여해야 합니다, 하지만 디렉터리에 표시 되기 위한 최소 팔로워(%{min_followers})수에 미치지 못했습니다.
     explanation: 관심사에 대한 유저들을 발견합니다
-    explore_kiksocial: "%{title} 탐사하기"
+    explore_kahlu: "%{title} 탐사하기"
     how_to_enable: 아직 디렉터리에 참여하지 않았습니다. 아래에서 참여할 수 있습니다. 바이오 텍스트에 해시태그를 사용해 특정 해시태그 디렉터리에 표시 될 수 있습니다!
     people:
       one: "%{count}명"
@@ -1008,7 +1008,7 @@ ko:
   themes:
     contrast: 마스토돈 (고대비)
     default: 마스토돈 (어두움)
-    kiksocial-light: 마스토돈 (밝음)
+    kahlu-light: 마스토돈 (밝음)
   time:
     formats:
       default: "%Y년 %m월 %d일 %H:%M"

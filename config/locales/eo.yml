@@ -2,7 +2,7 @@
 eo:
   about:
     about_hashtag_html: Ĉi tiuj estas la publikaj mesaĝoj markitaj per <strong>#%{hashtag}</strong>. Vi povas interagi kun ili se vi havas konton ie ajn en la fediverse.
-    about_kiksocial_html: kik Social estas socia reto bazita sur malfermitaj retaj protokoloj kaj sur libera malfermitkoda programo. Ĝi estas sencentra kiel retmesaĝoj.
+    about_kahlu_html: kik Social estas socia reto bazita sur malfermitaj retaj protokoloj kaj sur libera malfermitkoda programo. Ĝi estas sencentra kiel retmesaĝoj.
     about_this: Pri
     active_count_after: aktiva
     active_footnote: Monate Aktivaj Uzantoj (MAU)
@@ -39,7 +39,7 @@ eo:
       one: uzanto
       other: uzantoj
     user_count_before: Hejmo de
-    what_is_kiksocial: Kio estas kik Social?
+    what_is_kahlu: Kio estas kik Social?
   accounts:
     choices_html: 'Proponoj de %{name}:'
     follow: Sekvi
@@ -569,7 +569,7 @@ eo:
     enabled: Vi estas listigata en la profilujo.
     enabled_but_waiting: Vi elektis esti listigata en la profilujo, sed vi ankoraŭ ne havas la minimuman kvanton da sekvantoj (%{min_followers}) por esti listigata.
     explanation: Malkovru uzantojn per iliaj interesoj
-    explore_kiksocial: Esplori %{title}
+    explore_kahlu: Esplori %{title}
     how_to_enable: Vi ankoraŭ ne donis permeson listigi vin en la profilujo. Vi povas doni permeson ĉi-sube. Uzu kradvortojn en via biografia teksto por esti listigata sub specifaj kradvortoj!
     people:
       one: "%{count} persono"
@@ -916,7 +916,7 @@ eo:
   themes:
     contrast: kik Social (Forta kontrasto)
     default: kik Social (Malluma)
-    kiksocial-light: kik Social (Luma)
+    kahlu-light: kik Social (Luma)
   time:
     formats:
       default: "%Y-%m-%d %H:%M"

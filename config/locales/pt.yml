@@ -2,7 +2,7 @@
 pt:
   about:
     about_hashtag_html: Estes são toots públicos marcados com <strong>#%{hashtag}</strong>. Podes interagir com eles se tiveres uma conta kik Social.
-    about_kiksocial_html: kik Social é uma rede social baseada em protocolos abertos da web e software livre e gratuito. É descentralizado como e-mail.
+    about_kahlu_html: kik Social é uma rede social baseada em protocolos abertos da web e software livre e gratuito. É descentralizado como e-mail.
     about_this: Sobre esta instância
     administered_by: 'Administrado por:'
     api: API
@@ -28,7 +28,7 @@ pt:
       one: utilizador
       other: utilizadores
     user_count_before: Casa para
-    what_is_kiksocial: O que é o kik Social?
+    what_is_kahlu: O que é o kik Social?
   accounts:
     choices_html: 'escolhas de %{name}:'
     follow: Seguir
@@ -542,7 +542,7 @@ pt:
     enabled: Neste momento tu estás listado no dirétorio.
     enabled_but_waiting: Tu escolheste ser listado no diretório, mas ainda não tens o número mínimo de seguidores (%{min_followers}) para integrares esta lista.
     explanation: Descobre utilizadores com base nos seus interesses
-    explore_kiksocial: Explorar %{title}
+    explore_kahlu: Explorar %{title}
     how_to_enable: Tu ainda não integras este directório. Podes fazer isso abaixo. Usa hashtags na tua biografia para seres listado em hashtags específicas!
     people:
       one: "%{count} pessoa"
@@ -928,7 +928,7 @@ pt:
   themes:
     contrast: kik Social (Elevado contraste)
     default: kik Social
-    kiksocial-light: kik Social (Leve)
+    kahlu-light: kik Social (Leve)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

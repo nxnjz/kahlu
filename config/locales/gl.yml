@@ -2,7 +2,7 @@
 gl:
   about:
     about_hashtag_html: Estas son mensaxes públicas etiquetadas con <strong>#%{hashtag}</strong>. Pode interactuar con elas si ten unha conta nalgures do fediverso.
-    about_kiksocial_html: kik Social é unha rede social que se basea en protocolos web abertos e libres, software de código aberto. É descentralizada como o correo electrónico.
+    about_kahlu_html: kik Social é unha rede social que se basea en protocolos web abertos e libres, software de código aberto. É descentralizada como o correo electrónico.
     about_this: Sobre
     active_count_after: activo
     active_footnote: Usuarias Activas no Mes (UAM)
@@ -39,7 +39,7 @@ gl:
       one: usuaria
       other: usuarias
     user_count_before: Fogar de
-    what_is_kiksocial: Qué é kik Social?
+    what_is_kahlu: Qué é kik Social?
   accounts:
     choices_html: 'Eleccións de %{name}:'
     follow: Seguir
@@ -568,7 +568,7 @@ gl:
     enabled: Vostede está actualmente na lista do directorio.
     enabled_but_waiting: Vostede optou por ser incluída no directorio, mais por agora non ten o número mínimo de seguidoras (%{min_followers}) para aparecer.
     explanation: Descubra usuarias según o seu interese
-    explore_kiksocial: Explorar %{title}
+    explore_kahlu: Explorar %{title}
     how_to_enable: Actualmente non solicitou ser incluída no directorio, pode facelo abaixo. Utilice etiquetas no texto de biografía para ser incluída baixo etiquetas específicas!
     people:
       one: "%{count} persoa"
@@ -983,7 +983,7 @@ gl:
   themes:
     contrast: kik Social (Alto contraste)
     default: kik Social (Escuro)
-    kiksocial-light: kik Social (Claro)
+    kahlu-light: kik Social (Claro)
   time:
     formats:
       default: "%d %b, %Y, %H:%M"

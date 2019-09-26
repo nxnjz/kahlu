@@ -1,7 +1,7 @@
 ---
 th:
   about:
-    about_kiksocial_html: kik Social เป็นเครือข่ายสังคมที่ทำงานบนโปรโตคอลเว็บแบบเปิดและซอฟต์แวร์เสรีที่เปิดต้นฉบับ กระจายศูนย์เหมือนอีเมล
+    about_kahlu_html: kik Social เป็นเครือข่ายสังคมที่ทำงานบนโปรโตคอลเว็บแบบเปิดและซอฟต์แวร์เสรีที่เปิดต้นฉบับ กระจายศูนย์เหมือนอีเมล
     about_this: เกี่ยวกับ
     active_count_after: ที่ใช้งาน
     active_footnote: ผู้ใช้งานรายเดือน (MAU)
@@ -33,7 +33,7 @@ th:
       one: ผู้ใช้
       other: ผู้ใช้
     user_count_before: บ้านของ
-    what_is_kiksocial: kik Social คืออะไร?
+    what_is_kahlu: kik Social คืออะไร?
   accounts:
     follow: ติดตาม
     followers:
@@ -406,7 +406,7 @@ th:
   directories:
     directory: ไดเรกทอรีโปรไฟล์
     explanation: ค้นพบผู้ใช้ตามความสนใจของเขา
-    explore_kiksocial: สำรวจ %{title}
+    explore_kahlu: สำรวจ %{title}
   errors:
     '403': คุณไม่มีสิทธิดูหน้านี้
     '404': หน้าที่คุณกำลังมองหาไม่ได้อยู่ที่นี่
@@ -626,7 +626,7 @@ th:
   themes:
     contrast: kik Social (ความคมชัดสูง)
     default: kik Social (มืด)
-    kiksocial-light: kik Social (สว่าง)
+    kahlu-light: kik Social (สว่าง)
   time:
     formats:
       default: "%d %b %Y, %H:%M"

@@ -2,7 +2,7 @@
 sl:
   about:
     about_hashtag_html: To so javni tuti, označeni z <strong>#%{hashtag}</strong>. Z njimi se lahko povežete, če imate račun kjerkoli v fediversu.
-    about_kiksocial_html: kik Social je socialno omrežje, ki temelji na odprtih spletnih protokolih in prosti ter odprtokodni programski opremi. Je decentraliziran, kot e-pošta.
+    about_kahlu_html: kik Social je socialno omrežje, ki temelji na odprtih spletnih protokolih in prosti ter odprtokodni programski opremi. Je decentraliziran, kot e-pošta.
     about_this: O kik Socialu
     administered_by: 'Upravlja:'
     api: API
@@ -32,7 +32,7 @@ sl:
       other: uporabnikov
       two: uporabniki
     user_count_before: Dom za
-    what_is_kiksocial: Kaj je kik Social?
+    what_is_kahlu: Kaj je kik Social?
   accounts:
     choices_html: "%{name} izbire:"
     follow: Sledi

@@ -2,7 +2,7 @@
 nl:
   about:
     about_hashtag_html: Dit zijn openbare toots die getagged zijn met <strong>#%{hashtag}</strong>. Je kunt er op reageren of iets anders mee doen als je op kik Social (of ergens anders in de fediverse) een account hebt.
-    about_kiksocial_html: kik Social is een sociaal netwerk dat gebruikt maakt van open webprotocollen en vrije software. Het is net zoals e-mail gedecentraliseerd.
+    about_kahlu_html: kik Social is een sociaal netwerk dat gebruikt maakt van open webprotocollen en vrije software. Het is net zoals e-mail gedecentraliseerd.
     about_this: Over deze server
     active_count_after: actief
     active_footnote: Actieve gebruikers per maand (MAU)
@@ -39,7 +39,7 @@ nl:
       one: gebruiker
       other: gebruikers
     user_count_before: Thuisbasis van
-    what_is_kiksocial: Wat is kik Social?
+    what_is_kahlu: Wat is kik Social?
   accounts:
     choices_html: 'Aanbevelingen van %{name}:'
     follow: Volgen
@@ -575,7 +575,7 @@ nl:
     enabled: Je staat momenteel in de gebruikersgids vermeldt.
     enabled_but_waiting: Je hebt er voor gekozen om in de gebruikersgids te worden vermeldt, maar je hebt daarvoor nog niet het minimaal aantal volgers (%{min_followers}).
     explanation: Ontdek gebruikers aan de hand van hun interesses
-    explore_kiksocial: "%{title} verkennen"
+    explore_kahlu: "%{title} verkennen"
     how_to_enable: Je geeft momenteel geen toestemming om in de gebruikersgids te worden vermeldt. Je kunt hieronder toestemming geven. Gebruik hashtags in de tekst van jouw bio, om onder bepaalde hashtags te worden vermeldt!
     people:
       one: "%{count} gebruikers"
@@ -1006,7 +1006,7 @@ nl:
   themes:
     contrast: kik Social (hoog contrast)
     default: kik Social (donker)
-    kiksocial-light: kik Social (licht)
+    kahlu-light: kik Social (licht)
   time:
     formats:
       default: "%d %B %Y om %H:%M"

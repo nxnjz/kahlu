@@ -9,7 +9,7 @@
 		height: 112px;
 		width: 100%;
 		background: lighten($kik-background-container, 4%);
-		body.theme-kiksocial-light & {
+		body.theme-kahlu-light & {
 			background: darken($kik-background-container-light, 4%);
 		}
 
@@ -33,7 +33,7 @@
 			width: 82px;
 			height: 82px;
 			border: 6px solid $kik-background-base;
-			body.theme-kiksocial-light & {border: 6px solid $kik-background-base-light;}
+			body.theme-kahlu-light & {border: 6px solid $kik-background-base-light;}
 			background-size: cover;
 		}
 	}
@@ -55,7 +55,7 @@
 			font-weight: bold;
 			line-height: 24px;
 			color: #fff;
-			body.theme-kiksocial-light & {color: $kik-default-text-light;}
+			body.theme-kahlu-light & {color: $kik-default-text-light;}
 		}
 
 		&:hover & {
@@ -100,7 +100,7 @@
 			display: block;
 			width: 100%;
 			color: #fff;
-			body.theme-kiksocial-light & {color: $kik-default-text-light;}
+			body.theme-kahlu-light & {color: $kik-default-text-light;}
 			font-size: 20px;
 			font-weight: 800;
 			line-height: 24px;

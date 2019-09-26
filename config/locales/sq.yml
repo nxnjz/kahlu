@@ -2,7 +2,7 @@
 sq:
   about:
     about_hashtag_html: Këto janë mesazhe publike të etiketuar me <strong>#%{hashtag}</strong>. Mundeni të ndërveproni me ta, nëse keni një llogari kudo qoftë në fediverse.
-    about_kiksocial_html: kik Social-i është një rrjet shoqëror i bazuar në protokolle web të hapur dhe në software të lirë, me burim të hapur. Është i decentralizuar, si email-ii.
+    about_kahlu_html: kik Social-i është një rrjet shoqëror i bazuar në protokolle web të hapur dhe në software të lirë, me burim të hapur. Është i decentralizuar, si email-ii.
     about_this: Mbi
     administered_by: 'Administruar nga:'
     api: API
@@ -27,7 +27,7 @@ sq:
     user_count_after:
       one: përdorues
       other: përdorues
-    what_is_kiksocial: Ç’është kik Social-i?
+    what_is_kahlu: Ç’është kik Social-i?
   accounts:
     choices_html: 'Zgjedhje të %{name}:'
     follow: Ndiqeni
@@ -537,7 +537,7 @@ sq:
     enabled: Gjendeni te lista e drejtorisë.
     enabled_but_waiting: Keni zgjedhur të jeni pjesë e drejtorisë, por ende s’keni numrin minimum të ndjekësve (%{min_followers}) për përfshirje në të.
     explanation: Zbuloni përdorues bazuar në interesat e tyre
-    explore_kiksocial: Eksploroni %{title}
+    explore_kahlu: Eksploroni %{title}
     how_to_enable: S’keni zgjedhur të jeni i pranishëm te drejtoria. Mund ta bëni më poshtë. Përdorni te teksti i jetëshkrimit tuaj hashtagë, për t’u përfshirë nën hashtagë specifikë!
     people:
       one: "%{count} person"
@@ -907,7 +907,7 @@ sq:
   themes:
     contrast: kik Social (Me shumë kontrast)
     default: kik Social (I errët)
-    kiksocial-light: kik Social (I çelët)
+    kahlu-light: kik Social (I çelët)
   time:
     formats:
       default: "%d %b, %Y, %H:%M"
