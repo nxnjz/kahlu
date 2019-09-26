@@ -2,7 +2,7 @@
 de:
   about:
     about_hashtag_html: Dies sind öffentliche Beiträge, die mit <strong>#%{hashtag}</strong> getaggt wurden. Wenn du irgendwo im Fediversum ein Konto besitzt, kannst du mit ihnen interagieren.
-    about_kiksocial_html: kik Social ist ein soziales Netzwerk. Es basiert auf offenen Web-Protokollen und freier, quelloffener Software. Es ist dezentral (so wie E-Mail!).
+    about_kahlu_html: kik Social ist ein soziales Netzwerk. Es basiert auf offenen Web-Protokollen und freier, quelloffener Software. Es ist dezentral (so wie E-Mail!).
     about_this: Über diesen Server
     active_count_after: aktiv
     active_footnote: Monatlich Aktive User (MAU)
@@ -39,7 +39,7 @@ de:
       one: Benutzer:in
       other: Benutzer:innen
     user_count_before: Zuhause für
-    what_is_kiksocial: Was ist kik Social?
+    what_is_kahlu: Was ist kik Social?
   accounts:
     choices_html: "%{name} empfiehlt:"
     follow: Folgen
@@ -575,7 +575,7 @@ de:
     enabled: Du bist gerade in dem Verzeichnis gelistet.
     enabled_but_waiting: Du bist damit einverstanden im Verzeichnis gelistet zu werden, aber du hast nicht die minimale Anzahl an Folgenden (%{min_followers}), damit es passiert.
     explanation: Entdecke Benutzer basierend auf deren Interessen
-    explore_kiksocial: Entdecke %{title}
+    explore_kahlu: Entdecke %{title}
     how_to_enable: Du hast dich gerade nicht dazu entschieden im Verzeichnis gelistet zu werden. Du kannst dich unten dafür eintragen. Benutze Hashtags in deiner Profilbeschreibung, um unter spezifischen Hashtags gelistet zu werden!
     people:
       one: "%{count} Person"
@@ -1008,7 +1008,7 @@ de:
   themes:
     contrast: kik Social (Hoher Kontrast)
     default: kik Social (Dunkel)
-    kiksocial-light: kik Social (Hell)
+    kahlu-light: kik Social (Hell)
   time:
     formats:
       default: "%d.%m.%Y %H:%M"

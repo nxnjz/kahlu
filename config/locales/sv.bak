@@ -2,7 +2,7 @@
 sv:
   about:
     about_hashtag_html: Dessa är offentliga toots märkta med <strong>#%{hashtag}</strong>. Du kan interagera med dem om du har ett konto någonstans i federationen.
-    about_kiksocial_html: kik Social är ett socialt nätverk baserat på öppna webbprotokoll och gratis, öppen källkodsprogramvara. Det är decentraliserat som e-post.
+    about_kahlu_html: kik Social är ett socialt nätverk baserat på öppna webbprotokoll och gratis, öppen källkodsprogramvara. Det är decentraliserat som e-post.
     about_this: Om
     administered_by: 'Administreras av:'
     contact: Kontakt
@@ -19,7 +19,7 @@ sv:
     status_count_before: Som skapat
     user_count_after: användare
     user_count_before: Hem till
-    what_is_kiksocial: Vad är kik Social?
+    what_is_kahlu: Vad är kik Social?
   accounts:
     follow: Följa
     followers: Följare
@@ -722,7 +722,7 @@ sv:
   themes:
     contrast: Hög kontrast
     default: kik Social
-    kiksocial-light: kik Social (ljust)
+    kahlu-light: kik Social (ljust)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
@@ -753,7 +753,7 @@ sv:
       explanation: Här är några tips för att komma igång
       final_action: Börja posta
       final_step: 'Börja posta! Även utan anhängare kan dina offentliga meddelanden ses av andra, till exempel på den lokala tidslinjen och i hashtags. Du får gärna presentera dig via hashtaggen #introductions.'
-      full_handle: Ditt fullständiga användarnamn/kiksocialadress
+      full_handle: Ditt fullständiga användarnamn/kahluadress
       full_handle_hint: Det här är vad du skulle berätta för dina vänner så att de kan meddela eller följa dig från en annan instans.
       review_preferences_action: Ändra inställningar
       review_preferences_step: Se till att du ställer in dina inställningar, t.ex. vilka e-postmeddelanden du vill ta emot eller vilken integritetsnivå du vill att dina inlägg ska vara. Om du inte har åksjuka, kan du välja att aktivera automatisk uppspelning av GIF-bilder.

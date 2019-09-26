@@ -2,7 +2,7 @@
 ca:
   about:
     about_hashtag_html: Aquests són toots públics etiquetats amb <strong>#%{hashtag}</strong>. Pots interactuar amb ells si tens un compte a qualsevol lloc del fediverse.
-    about_kiksocial_html: kik Social és una xarxa social basada en protocols web oberts i en programari lliure i de codi obert. Està descentralitzat com el correu electrònic.
+    about_kahlu_html: kik Social és una xarxa social basada en protocols web oberts i en programari lliure i de codi obert. Està descentralitzat com el correu electrònic.
     about_this: Quant a
     active_count_after: actiu
     active_footnote: Usuaris actius mensuals (UAM)
@@ -39,7 +39,7 @@ ca:
       one: usuari
       other: usuaris
     user_count_before: Tenim
-    what_is_kiksocial: Què és kik Social?
+    what_is_kahlu: Què és kik Social?
   accounts:
     choices_html: 'Eleccions de %{name}:'
     follow: Segueix
@@ -575,7 +575,7 @@ ca:
     enabled: Actualment estàs inclòs al directori.
     enabled_but_waiting: Has optat per aparèixer al directori però encara no tens el nombre mínim de seguidors (%{min_followers}) per ser-hi.
     explanation: Descobreix usuaris segons els seus interessos
-    explore_kiksocial: Explora %{title}
+    explore_kahlu: Explora %{title}
     how_to_enable: Actualment no tens activat ser al directori. Pots optar-hi a continuació. Utilitza etiquetes en el teu text bio per incloure't sota etiquetes especifiques!
     people:
       one: "%{count} persona"
@@ -1006,7 +1006,7 @@ ca:
   themes:
     contrast: kik Social (Alt contrast)
     default: kik Social (Fosc)
-    kiksocial-light: kik Social (Clar)
+    kahlu-light: kik Social (Clar)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

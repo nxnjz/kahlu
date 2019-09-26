@@ -2,7 +2,7 @@
 hu:
   about:
     about_hashtag_html: Ezek a <strong>#%{hashtag}</strong> címkével ellátott publikus tülkök. Reagálhatsz rájuk, ha már van felhasználói fiókod valahol a föderációban.
-    about_kiksocial_html: kik Social egy <em>szabad, nyílt forráskódú</em> szociális hálózati kiszolgálo. Egy <em>központosítatlan</em> alternatíva a kereskedelmi platformokra, elkerüli a kommunikációd monopolizációját veszélyét. Bárki futtathatja a kik Social-t és részt vehet a <em>szociális hálózatban</em>.
+    about_kahlu_html: kik Social egy <em>szabad, nyílt forráskódú</em> szociális hálózati kiszolgálo. Egy <em>központosítatlan</em> alternatíva a kereskedelmi platformokra, elkerüli a kommunikációd monopolizációját veszélyét. Bárki futtathatja a kik Social-t és részt vehet a <em>szociális hálózatban</em>.
     about_this: Rólunk
     contact: Kapcsolat
     contact_missing: Nincs megadva
@@ -18,7 +18,7 @@ hu:
     status_count_before: eddig
     user_count_after: felhasználónk
     user_count_before: Összesen
-    what_is_kiksocial: Mi a kik Social?
+    what_is_kahlu: Mi a kik Social?
   accounts:
     follow: Követés
     followers: Követők

@@ -22,7 +22,7 @@ class FixAccountsUniqueIndex < ActiveRecord::Migration[5.2]
     say 'interrupt this migration if you are not ready.'
     say ''
     say 'This migration will irreversibly delete user accounts with duplicate'
-    say 'usernames. You may use the `rake kiksocial:maintenance:find_duplicate_usernames`'
+    say 'usernames. You may use the `rake kahlu:maintenance:find_duplicate_usernames`'
     say 'task to manually deal with such accounts before running this migration.'
 
     10.downto(1) do |i|

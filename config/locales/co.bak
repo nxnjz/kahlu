@@ -2,7 +2,7 @@
 co:
   about:
     about_hashtag_html: Quessi sò statuti pubblichi taggati cù <strong>#%{hashtag}</strong>. Pudete interagisce cù elli sì voi avete un contu in qualche parte di u fediverse.
-    about_kiksocial_html: kik Social ghjè una rete suciale custruita incù prutucolli web aperti è lugiziali liberi. Hè decentralizatu cumu l’e-mail.
+    about_kahlu_html: kik Social ghjè una rete suciale custruita incù prutucolli web aperti è lugiziali liberi. Hè decentralizatu cumu l’e-mail.
     about_this: À prupositu
     active_count_after: attivi
     active_footnote: Utilizatori Attivi Mensili (UAM)
@@ -39,7 +39,7 @@ co:
       one: utilizatore
       other: utilizatori
     user_count_before: Ci sò
-    what_is_kiksocial: Quale hè kik Social?
+    what_is_kahlu: Quale hè kik Social?
   accounts:
     choices_html: "%{name} ricumanda:"
     follow: Siguità
@@ -575,7 +575,7 @@ co:
     enabled: Site inscrittu·a indè l'annuariu.
     enabled_but_waiting: Avete sceltu d'esse inscrittu·a indè l'annuariu, mà ùn avete micca ancu u numeru minimale d'abbunati (%{min_followers}) per esse listatu·a.
     explanation: Scopre utilizatori à partesi di i so centri d'interessu
-    explore_kiksocial: Scopre à %{title}
+    explore_kahlu: Scopre à %{title}
     how_to_enable: Ùn site micca ancu inscrittu·a indè l'annuariu. Pudete inscrive vi quì sottu. Utilizate qualchi hashtag indè a vostra biugrafia per esse listatu·a indè tag specifichi!
     people:
       one: "%{count} persona"
@@ -1005,7 +1005,7 @@ co:
   themes:
     contrast: kik Social (Cuntrastu altu)
     default: kik Social (Scuru)
-    kiksocial-light: kik Social (Chjaru)
+    kahlu-light: kik Social (Chjaru)
   time:
     formats:
       default: "%d %b %Y, %H:%M"

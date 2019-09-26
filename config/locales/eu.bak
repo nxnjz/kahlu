@@ -2,7 +2,7 @@
 eu:
   about:
     about_hashtag_html: Hauek  <strong>#%{hashtag}</strong> traola duten toot publikoak dira. Fedibertsoko edozein kontu baduzu harremanetan jarri zaitezke.
-    about_kiksocial_html: kik Social web protokolo ireki eta libreak darabiltzan gizarte sare bat da. E-mail sarea bezala deszentralizatua da.
+    about_kahlu_html: kik Social web protokolo ireki eta libreak darabiltzan gizarte sare bat da. E-mail sarea bezala deszentralizatua da.
     about_this: Honi buruz
     administered_by: 'Administratzailea(k):'
     api: APIa
@@ -28,7 +28,7 @@ eu:
       one: erabiltzaile
       other: erabiltzaile
     user_count_before: Hemen
-    what_is_kiksocial: Zer da kik Social?
+    what_is_kahlu: Zer da kik Social?
   accounts:
     choices_html: "%{name}(r)en aukerak:"
     follow: Jarraitu
@@ -539,7 +539,7 @@ eu:
     enabled: Direktorioan zerrendatuta zaude orain.
     enabled_but_waiting: Direktorioan zerrendatuta izatea aukeratu duzu, baina ez duzu oraindik gutxieneko jarraitzaile kopurua (%{min_followers}) zerrendan agertzeko.
     explanation: Deskubritu erabiltzaileak interesen arabera
-    explore_kiksocial: Esploratu %{title}
+    explore_kahlu: Esploratu %{title}
     how_to_enable: Ez duzu aukeratu direktorioan zerrendatua izatea aukeratu. Behean aukeratu dezakezu. Erabili traolak zure biografiaren testuan traola zehatzetan agertzeko!
     people:
       one: pertsona %{count}
@@ -910,7 +910,7 @@ eu:
   themes:
     contrast: kik Social (Kontraste altua)
     default: kik Social (Iluna)
-    kiksocial-light: kik Social (Argia)
+    kahlu-light: kik Social (Argia)
   time:
     formats:
       default: "%Y(e)ko %b %d, %H:%M"

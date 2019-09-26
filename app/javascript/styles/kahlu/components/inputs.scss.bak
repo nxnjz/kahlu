@@ -11,7 +11,7 @@ textarea {
 		border-color: $kik-placeholder-accent;
 		background: $kik-background-container;
 		@include input-placeholder($kik-placeholder-accent);
-		body.theme-kiksocial-light & {
+		body.theme-kahlu-light & {
 			color: $kik-placeholder-accent;
 			border-color: $kik-secondary-text;
 			background: $kik-background-base-light;	

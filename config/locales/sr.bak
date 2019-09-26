@@ -2,7 +2,7 @@
 sr:
   about:
     about_hashtag_html: Ово су јавни статуси таговани са <strong>#%{hashtag}</strong>. Можете одговарати на њих ако имате налог било где у федиверсу.
-    about_kiksocial_html: Мастодон је друштвена мрежа базирана на отвореним протоколима и слободном софтверу отвореног кода. Децентрализована је као што је децентрализована е-пошта.
+    about_kahlu_html: Мастодон је друштвена мрежа базирана на отвореним протоколима и слободном софтверу отвореног кода. Децентрализована је као што је децентрализована е-пошта.
     about_this: О инстанци
     administered_by: 'Администрирано од стране:'
     api: API
@@ -32,7 +32,7 @@ sr:
       one: корисник
       other: корисника
     user_count_before: Дом за
-    what_is_kiksocial: Шта је Мастодон?
+    what_is_kahlu: Шта је Мастодон?
   accounts:
     choices_html: "%{name}'s избори:"
     follow: Запрати
@@ -549,7 +549,7 @@ sr:
     directory: Профил фасцикле
     enabled: Ви сте тренутно видљиви у фасцикли.
     explanation: Откријте кориснике на основу њихових интереса
-    explore_kiksocial: Истражи %{title}
+    explore_kahlu: Истражи %{title}
     people:
       few: "%{count} људе"
       many: "%{count} људе"
@@ -840,7 +840,7 @@ sr:
   themes:
     contrast: Велики контраст
     default: Мастодон
-    kiksocial-light: Мастодон (светло)
+    kahlu-light: Мастодон (светло)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

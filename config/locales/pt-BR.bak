@@ -2,7 +2,7 @@
 pt-BR:
   about:
     about_hashtag_html: Estes são toots públicos com a hashtag <strong>#%{hashtag}</strong>. Você pode interagir com eles se tiver uma conta em qualquer lugar no fediverso.
-    about_kiksocial_html: kik Social é uma rede social baseada em protocolos abertos e software gratuito e de código aberto. É descentralizada como e-mail.
+    about_kahlu_html: kik Social é uma rede social baseada em protocolos abertos e software gratuito e de código aberto. É descentralizada como e-mail.
     about_this: Sobre
     active_count_after: Ativo
     active_footnote: Usuários ativos mensais (UAM)
@@ -39,7 +39,7 @@ pt-BR:
       one: usuário
       other: usuários
     user_count_before: Casa de
-    what_is_kiksocial: O que é kik Social?
+    what_is_kahlu: O que é kik Social?
   accounts:
     choices_html: 'Escolhas de %{name}:'
     follow: Seguir
@@ -575,7 +575,7 @@ pt-BR:
     enabled: Você está na lista do diretório.
     enabled_but_waiting: Você escolheu ser listado no diretório, mas você ainda não tem o mínimo de seguidores (%{min_followers}) para ser listado.
     explanation: Descobrir usuários baseado em seus interesses
-    explore_kiksocial: Explorar %{title}
+    explore_kahlu: Explorar %{title}
     how_to_enable: Você não se inscreveu no diretório. Você pode se inscrever abaixo. Use hashtags no texto da sua bio para ser listado em hashtags específicas!
     people:
       one: "%{count} pessoa"
@@ -1006,7 +1006,7 @@ pt-BR:
   themes:
     contrast: kik Social  (Alto contraste)
     default: kik Social (Escuro)
-    kiksocial-light: kik Social (claro)
+    kahlu-light: kik Social (claro)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

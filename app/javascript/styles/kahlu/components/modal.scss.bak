@@ -313,7 +313,7 @@
 	border-radius: 4px;
 	border: 1px solid $kik-placeholder-accent;
 	color: $kik-secondary-text;
-	body.theme-kiksocial-light & {color: $kik-default-text-light;}
+	body.theme-kahlu-light & {color: $kik-default-text-light;}
 	background: $kik-background-container;
 	.status__display-name {
 		display: block;
@@ -435,7 +435,7 @@
 	.status__content,
 	.status__content p {
 		color: $kik-secondary-text;
-		body.theme-kiksocial-light & {color: $kik-default-text-light;}
+		body.theme-kahlu-light & {color: $kik-default-text-light;}
 	}
 
 	@media screen and (max-width: 480px) {

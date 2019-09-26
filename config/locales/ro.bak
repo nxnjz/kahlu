@@ -62,7 +62,7 @@ ro:
     warning_html: Doar ștergerea conținutului de pe acest server este garantată. Conținutul tău care a fost redistribuit în alte instațe e posibil să lase urme. Serverele deconecate sau care nu mai sunt abonate la actualizările contului tău nu își vor mai actualiza baza de date.
   directories:
     explanation: Descoperă oameni și companii în funcție de interesele lor
-    explore_kiksocial: Explorează %{title}
+    explore_kahlu: Explorează %{title}
     people:
       few: "%{count} persoană"
       one: "%{count} persoană"

@@ -2,7 +2,7 @@
 uk:
   about:
     about_hashtag_html: Немає публічних постів з хештегом<strong>#%{hashtag}</strong>. Ви можете  You can interact with them if you have an account anywhere in the fediverse.
-    about_kiksocial_html: kik Social - це <em>вільна</em> соціальна мережа з <em>відкритим вихідним кодом</em>. Вона є <em>децентралізованою</em> альтернативою комерційним платформам, що дозволяє уникнути ризиків монополізації вашого спілкування однією компанією. Виберіть сервер, якому ви довіряєте &mdash; що б ви не вибрали, Ви зможете спілкуватись з усіма іншими. Будь-який користувач може запустити власну інстанцію kik Social та без проблем брати участь в <em>соціальній мережі</em>.
+    about_kahlu_html: kik Social - це <em>вільна</em> соціальна мережа з <em>відкритим вихідним кодом</em>. Вона є <em>децентралізованою</em> альтернативою комерційним платформам, що дозволяє уникнути ризиків монополізації вашого спілкування однією компанією. Виберіть сервер, якому ви довіряєте &mdash; що б ви не вибрали, Ви зможете спілкуватись з усіма іншими. Будь-який користувач може запустити власну інстанцію kik Social та без проблем брати участь в <em>соціальній мережі</em>.
     about_this: Про цю інстанцію
     administered_by: 'Адміністратор:'
     api: API
@@ -23,7 +23,7 @@ uk:
     terms: Правила використання
     user_count_after: користувачів
     user_count_before: Тут живе
-    what_is_kiksocial: Що таке kik Social?
+    what_is_kahlu: Що таке kik Social?
   accounts:
     follow: Підписатися
     followers: Підписники
@@ -683,7 +683,7 @@ uk:
   themes:
     contrast: Висока контрасність
     default: kik Social
-    kiksocial-light: kik Social (світла)
+    kahlu-light: kik Social (світла)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

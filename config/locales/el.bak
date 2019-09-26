@@ -2,7 +2,7 @@
 el:
   about:
     about_hashtag_html: Αυτά είναι κάποια από τα δημόσια τουτ σημειωμένα με <strong>#%{hashtag}</strong>. Μπορείς να αλληλεπιδράσεις με αυτά αν έχεις λογαριασμό οπουδήποτε στο fediverse.
-    about_kiksocial_html: Το kik Social είναι ένα κοινωνικό δίκτυο που βασίζεται σε ανοιχτά δικτυακά πρωτόκολλα και ελεύθερο λογισμικό ανοιχτού κώδικα. Είναι αποκεντρωμένο όπως το e-mail.
+    about_kahlu_html: Το kik Social είναι ένα κοινωνικό δίκτυο που βασίζεται σε ανοιχτά δικτυακά πρωτόκολλα και ελεύθερο λογισμικό ανοιχτού κώδικα. Είναι αποκεντρωμένο όπως το e-mail.
     about_this: Σχετικά
     active_count_after: ενεργοί
     active_footnote: Μηνιαίοι Ενεργοί Χρήστες (ΜΕΧ)
@@ -39,7 +39,7 @@ el:
       one: χρήστης
       other: χρήστες
     user_count_before: Σπίτι για
-    what_is_kiksocial: Τι είναι το kik Social;
+    what_is_kahlu: Τι είναι το kik Social;
   accounts:
     choices_html: 'Επιλογές του/της %{name}:'
     follow: Ακολούθησε
@@ -568,7 +568,7 @@ el:
     enabled: Περιλαμβάνεσαι στον κατάλογο.
     enabled_but_waiting: Έχεις επιλέξει να εμφανίζεσαι στον κατάλογο μεν, αλλά ακόμα δεν έχεις τον ελάχιστο αριθμό ακόλουθων (%{min_followers}) που απαιτείται για να συμπεριληφθείς.
     explanation: Βρες χρήστες βάσει των ενδιαφερόντων τους
-    explore_kiksocial: Εξερεύνησε το %{title}
+    explore_kahlu: Εξερεύνησε το %{title}
     how_to_enable: Δεν έχεις επιλέξει να συμπεριληφθείς στον καταλογο. Μπορείς να επιλέξεις παρακάτω. Χρησιμοποίησε ταμπέλες στο κείμενο του βιογραφικού σου για να εμφανίζεσαι κάτω από συγκεκριμένες ταμπέλες!
     people:
       one: "%{count} άτομο"
@@ -987,7 +987,7 @@ el:
   themes:
     contrast: kik Social (Υψηλή αντίθεση)
     default: kik Social (Σκοτεινό)
-    kiksocial-light: kik Social (Ανοιχτόχρωμο)
+    kahlu-light: kik Social (Ανοιχτόχρωμο)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

@@ -2,7 +2,7 @@
 ms:
   about:
     about_hashtag_html: Terdapat toot awam yang ditanda dengan <strong>#%{hashtag}</strong>. Anda boleh berinteraksi dengan mereka jika anda mempunyai akaun di mana-mana dunia persekutuan kik Social.
-    about_kiksocial_html: kik Social ialah rangkaian sosial berasaskan protokol web terbuka dan perisian percuma bersumber terbuka. Ianya tak terpusat seperti emel.
+    about_kahlu_html: kik Social ialah rangkaian sosial berasaskan protokol web terbuka dan perisian percuma bersumber terbuka. Ianya tak terpusat seperti emel.
     about_this: Mengenai Kami
     administered_by: 'Ditadbir oleh:'
     api: API
@@ -28,7 +28,7 @@ ms:
       one: pengguna
       other: pengguna
     user_count_before: Rumah kepada
-    what_is_kiksocial: Apakah itu kik Social?
+    what_is_kahlu: Apakah itu kik Social?
   accounts:
     choices_html: 'Pilihan %{name}:'
     follow: Ikut

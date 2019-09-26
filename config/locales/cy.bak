@@ -2,7 +2,7 @@
 cy:
   about:
     about_hashtag_html: Dyma dŵtiau cyhoeddus wedi eu tagio gyda <strong>#%{hashtag}</strong>. Gallwch ryngweithio gyda nhw os oes gennych gyfrif yn unrhyw le yn y ffeddysawd.
-    about_kiksocial_html: Mae kik Social yn rwydwaith cymdeithasol sy'n seiliedig ar brotocolau gwe a meddalwedd cod agored rhad ac am ddim. Yn debyg i e-bost mae'n ddatganoledig.
+    about_kahlu_html: Mae kik Social yn rwydwaith cymdeithasol sy'n seiliedig ar brotocolau gwe a meddalwedd cod agored rhad ac am ddim. Yn debyg i e-bost mae'n ddatganoledig.
     about_this: Ynghylch
     administered_by: 'Gweinyddir gan:'
     api: API
@@ -36,7 +36,7 @@ cy:
       two: defnyddwyr
       zero: defnyddwyr
     user_count_before: Cartref i
-    what_is_kiksocial: Beth yw kik Social?
+    what_is_kahlu: Beth yw kik Social?
   accounts:
     choices_html: 'Dewisiadau %{name}:'
     follow: Dilynwch
@@ -564,7 +564,7 @@ cy:
     enabled: Rydych chi wedi'ch rhestru yn y cyfeiriadur ar hyn o bryd.
     enabled_but_waiting: Rydych wedi dewis i chi gael eich rhestru yn y cyfeiriadur, ond nid oes gennych y nifer lleiaf o ddilynwyr (%{min_followers}) i'w rhestru eto.
     explanation: Darganfod defnyddwyr yn seiliedig ar eu diddordebau
-    explore_kiksocial: Archwilio %{title}
+    explore_kahlu: Archwilio %{title}
     how_to_enable: Ar hyn o bryd nid ydych chi wedi dewis y cyfeiriadur. Gallwch ddewis i mewn isod. Defnyddiwch hashnodau yn eich bio-destun i'w restru dan hashnodau penodol!
     people:
       few: "%{count} personau"
@@ -947,7 +947,7 @@ cy:
   themes:
     contrast: Cyferbyniad uchel
     default: kik Social
-    kiksocial-light: kik Social (golau)
+    kahlu-light: kik Social (golau)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

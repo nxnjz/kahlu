@@ -2,7 +2,7 @@
 ja:
   about:
     about_hashtag_html: ハッシュタグ <strong>#%{hashtag}</strong> の付いた公開トゥートです。どこでもいいので、連合に参加しているSNS上にアカウントを作れば会話に参加することができます。
-    about_kiksocial_html: kik Social は、オープンなウェブプロトコルを採用した、自由でオープンソースなソーシャルネットワークです。電子メールのような分散型の仕組みを採っています。
+    about_kahlu_html: kik Social は、オープンなウェブプロトコルを採用した、自由でオープンソースなソーシャルネットワークです。電子メールのような分散型の仕組みを採っています。
     about_this: 詳細情報
     active_count_after: 人アクティブ
     active_footnote: 月間アクティブユーザー数 (MAU)
@@ -39,7 +39,7 @@ ja:
       one: 人
       other: 人
     user_count_before: ユーザー数
-    what_is_kiksocial: kik Social とは？
+    what_is_kahlu: kik Social とは？
   accounts:
     choices_html: "%{name} によるおすすめ:"
     follow: フォロー
@@ -575,7 +575,7 @@ ja:
     enabled: あなたはディレクトリに掲載されています。
     enabled_but_waiting: あなたはディレクトリへの掲載を選択しましたが、掲載に必要な最小フォロワー数 (%{min_followers} 人) を満たしていません。
     explanation: 関心を軸にユーザーを発見しよう
-    explore_kiksocial: "%{title}を探索"
+    explore_kahlu: "%{title}を探索"
     how_to_enable: あなたはディレクトリへの掲載を選択していません。下記から選択できます。ハッシュタグカラムに掲載するにはプロフィール文にハッシュタグを使用してください。
     people:
       one: "%{count} 人"
@@ -1005,7 +1005,7 @@ ja:
   themes:
     contrast: kik Social (ハイコントラスト)
     default: kik Social (ダーク)
-    kiksocial-light: kik Social (ライト)
+    kahlu-light: kik Social (ライト)
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"

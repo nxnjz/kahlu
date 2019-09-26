@@ -2,7 +2,7 @@
 kk:
   about:
     about_hashtag_html: Бұл жерде <strong>#%{hashtag}</strong> хэштегімен жинақталған жазбалар. Желіге тіркеліп, сіз де қосыла аласыз бұл ортаға.
-    about_kiksocial_html: kik Social - әлеуметтік желіге негізделген, тегін және веб протоколды, ашық кодты бағдарлама. Ол email сияқты орталығы жоқ құрылым.
+    about_kahlu_html: kik Social - әлеуметтік желіге негізделген, тегін және веб протоколды, ашық кодты бағдарлама. Ол email сияқты орталығы жоқ құрылым.
     about_this: Туралы
     administered_by: 'Админ:'
     api: API
@@ -28,7 +28,7 @@ kk:
       one: қолданушы
       other: қолданушы
     user_count_before: Желіде
-    what_is_kiksocial: kik Social деген не?
+    what_is_kahlu: kik Social деген не?
   accounts:
     choices_html: "%{name} таңдаулары:"
     follow: Жазылу
@@ -540,7 +540,7 @@ kk:
     enabled: Каталогтағы тізімге ендіңіз.
     enabled_but_waiting: Каталогта көрінгіңіз келетінін түсінеміз, бірақ ол үшін кем дегенде (%{min_followers}) оқырманыңыз болуы қажет.
     explanation: Қолданушыларды қызығушылықтарына қарай реттеу
-    explore_kiksocial: "%{title} шарлау"
+    explore_kahlu: "%{title} шарлау"
     how_to_enable: Сіз қазіргі уақытта каталогқа қосылмағансыз. Төменде қосылуға болады. Арнайы био мәтініндегі хэштегтерді қолданыңыз!
     people:
       one: "%{count} адам"
@@ -925,7 +925,7 @@ kk:
   themes:
     contrast: kik Social (Жоғары контраст)
     default: kik Social (Қою)
-    kiksocial-light: kik Social (Ашық)
+    kahlu-light: kik Social (Ашық)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

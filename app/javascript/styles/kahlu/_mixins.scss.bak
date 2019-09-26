@@ -9,7 +9,7 @@
 @mixin kik-container-standards() {
 	border-radius: 10px;
 	background: $kik-background-container;
-	body.theme-kiksocial-light & {
+	body.theme-kahlu-light & {
 		@include light-theme-shadow();
 		background: $kik-background-container-light;
 	}

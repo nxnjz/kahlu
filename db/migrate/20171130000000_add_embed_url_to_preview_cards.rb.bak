@@ -1,7 +1,7 @@
-require Rails.root.join('lib', 'kiksocial', 'migration_helpers')
+require Rails.root.join('lib', 'kahlu', 'migration_helpers')
 
 class AddEmbedUrlToPreviewCards < ActiveRecord::Migration[5.1]
-  include KikSocial::MigrationHelpers
+  include kahlu::MigrationHelpers
 
   disable_ddl_transaction!
 

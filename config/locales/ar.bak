@@ -2,7 +2,7 @@
 ar:
   about:
     about_hashtag_html: هذه تبويقات متاحة للجمهور تحتوي على الكلمات الدلالية <strong>#%{hashtag}</strong>. يمكنك التفاعل معها إن كان لديك حساب في أي مكان على الفديفرس.
-    about_kiksocial_html: ماستدون شبكة إجتماعية مبنية على أسُس بروتوكولات برمجيات الويب الحرة و مفتوحة المصدر. و هو لامركزي تمامًا كالبريد الإلكتروني.
+    about_kahlu_html: ماستدون شبكة إجتماعية مبنية على أسُس بروتوكولات برمجيات الويب الحرة و مفتوحة المصدر. و هو لامركزي تمامًا كالبريد الإلكتروني.
     about_this: عن مثيل الخادوم هذا
     administered_by: 'يُديره :'
     api: واجهة برمجة التطبيقات
@@ -36,7 +36,7 @@ ar:
       two: مستخدمين
       zero: مستخدمين
     user_count_before: يستضيف
-    what_is_kiksocial: ما هو ماستدون ؟
+    what_is_kahlu: ما هو ماستدون ؟
   accounts:
     choices_html: 'توصيات %{name} :'
     follow: إتبع
@@ -553,7 +553,7 @@ ar:
     directory: سِجلّ الحسابات
     enabled: إنّ حسابك الآن ضمن فهرس المستخدِمين.
     explanation: استكشف مستخدِمين آخرين حسب المواضيع التي تهمهم
-    explore_kiksocial: استكشف %{title}
+    explore_kahlu: استكشف %{title}
     people:
       few: "%{count} شخص"
       many: "%{count} شخص"
@@ -866,7 +866,7 @@ ar:
   themes:
     contrast: تباين عالٍ
     default: ماستدون
-    kiksocial-light: ماستدون (فاتح)
+    kahlu-light: ماستدون (فاتح)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

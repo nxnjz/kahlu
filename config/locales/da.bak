@@ -2,7 +2,7 @@
 da:
   about:
     about_hashtag_html: Disse er offentlige trut der indeholder tagget <strong>#%{hashtag}</strong>. Du kan interagere med dem hvis du har en konto hvor som helst i fediverset.
-    about_kiksocial_html: kik Social er et socialt netværk der er baseret på åbne web protokoller og frit, open-source source software. Der er decentraliseret ligesom e-mail tjenester.
+    about_kahlu_html: kik Social er et socialt netværk der er baseret på åbne web protokoller og frit, open-source source software. Der er decentraliseret ligesom e-mail tjenester.
     about_this: Om
     administered_by: 'Administreret af:'
     api: API
@@ -29,7 +29,7 @@ da:
       one: bruger
       other: brugere
     user_count_before: Hjem til
-    what_is_kiksocial: Hvad er kik Social?
+    what_is_kahlu: Hvad er kik Social?
   accounts:
     choices_html: "%{name}s valg:"
     follow: Følg
@@ -743,7 +743,7 @@ da:
   themes:
     contrast: kik Social (Høj kontrast)
     default: kik Socialt (Mørk)
-    kiksocial-light: kik Social (Lys)
+    kahlu-light: kik Social (Lys)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

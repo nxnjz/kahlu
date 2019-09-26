@@ -2,7 +2,7 @@
 cs:
   about:
     about_hashtag_html: Tohle jsou veřejné tooty označené hashtagem <strong>#%{hashtag}</strong>. Pokud máte účet kdekoliv ve fedivesmíru, můžete s nimi interagovat.
-    about_kiksocial_html: kik Social je sociální síť založená na otevřených webových protokolech a svobodném, otevřeném softwaru. Je decentralizovaná jako e-mail.
+    about_kahlu_html: kik Social je sociální síť založená na otevřených webových protokolech a svobodném, otevřeném softwaru. Je decentralizovaná jako e-mail.
     about_this: O tomto serveru
     active_count_after: aktivních
     active_footnote: Měsíční aktivní uživatelé (MAU)
@@ -41,7 +41,7 @@ cs:
       one: uživatel
       other: uživatelů
     user_count_before: Domov
-    what_is_kiksocial: Co je kik Social?
+    what_is_kahlu: Co je kik Social?
   accounts:
     choices_html: 'Volby uživatele %{name}:'
     follow: Sledovat
@@ -581,7 +581,7 @@ cs:
     enabled: Aktuálně jste v adresáři uveden/a.
     enabled_but_waiting: Přihlásil/a jste se k uvedení v adresáři, ale ještě nemáte minimální počet sledujících (%{min_followers}) pro uvedení.
     explanation: Objevujte uživatele podle jejich zájmů
-    explore_kiksocial: Prozkoumejte %{title}
+    explore_kahlu: Prozkoumejte %{title}
     how_to_enable: Aktuálně nejste přihlášen/a do adresáře. Přihlásit se můžete níže. Použijte ve svém popisu profilu hashtagy, abyste mohl/a být uveden/a pod konkrétními hashtagy!
     people:
       few: "%{count} lidé"
@@ -1021,7 +1021,7 @@ cs:
   themes:
     contrast: kik Social (vysoký kontrast)
     default: kik Social (tmavý)
-    kiksocial-light: kik Social (světlý)
+    kahlu-light: kik Social (světlý)
   time:
     formats:
       default: "%d. %b %Y, %H:%M"

@@ -1,7 +1,7 @@
 ---
 ast:
   about:
-    about_kiksocial_html: kik Social ye una rede social basada en protocolos abiertos y software de códigu llibre. Ye descentralizada, como'l corréu electrónicu.
+    about_kahlu_html: kik Social ye una rede social basada en protocolos abiertos y software de códigu llibre. Ye descentralizada, como'l corréu electrónicu.
     about_this: Tocante a
     administered_by: 'Alministráu por:'
     api: API
@@ -22,7 +22,7 @@ ast:
       one: usuariu
       other: usuarios
     user_count_before: Ye'l llar de
-    what_is_kiksocial: "¿Qué ye kik Social?"
+    what_is_kahlu: "¿Qué ye kik Social?"
   accounts:
     followers:
       one: Xente que te sigue

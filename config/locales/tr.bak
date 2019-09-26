@@ -2,7 +2,7 @@
 tr:
   about:
     about_hashtag_html: Bunlar <strong>#%{hashtag}X</strong> ile etiketlenen genel paylaşımlar. Açık alanda herhangi bir yerde bir hesabınız varsa, onlarla etkileşime geçebilirsiniz.
-    about_kiksocial_html: kik Social <em>ücretsiz ve açık kaynaklı</em> bir sosyal ağdır. <em>Merkezileştirilmemiş</em> yapısı sayesinde diğer ticari sosyal platformların aksine iletişimininizin tek bir firmada tutulmasının/yönetilmesinin önüne geçer. Güvendiğiniz bir sunucuyu seçerek oradaki kişilerle etkileşimde bulunabilirsiniz. Herkes kendi kik Social sunucusunu kurabilir ve sorunsuz bir şekilde kik Social <em>sosyal ağına</em> dahil edebilir.
+    about_kahlu_html: kik Social <em>ücretsiz ve açık kaynaklı</em> bir sosyal ağdır. <em>Merkezileştirilmemiş</em> yapısı sayesinde diğer ticari sosyal platformların aksine iletişimininizin tek bir firmada tutulmasının/yönetilmesinin önüne geçer. Güvendiğiniz bir sunucuyu seçerek oradaki kişilerle etkileşimde bulunabilirsiniz. Herkes kendi kik Social sunucusunu kurabilir ve sorunsuz bir şekilde kik Social <em>sosyal ağına</em> dahil edebilir.
     about_this: Bu sunucu hakkında
     administered_by: 'Tarafından yönetildi:'
     api: API
@@ -28,7 +28,7 @@ tr:
       one: kullanıcı
       other: kullanıcı
     user_count_before: Kayıtlı
-    what_is_kiksocial: kik Social nedir?
+    what_is_kahlu: kik Social nedir?
   accounts:
     choices_html: "%{name} seçimleri:"
     follow: Takip et
